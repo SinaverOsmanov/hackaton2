@@ -1,4 +1,4 @@
-export async function setUserLocalStorage() {
+export function setUserLocalStorage() {
     const user = {
         id: 1,
         name: "Denis Random",
@@ -9,10 +9,10 @@ export async function setUserLocalStorage() {
         whatDoing: ["smoking", "cleaning"]
     }
 
-    await localStorage.setItem("user", JSON.stringify(user))
+    localStorage.setItem("user", JSON.stringify(user))
 }
 
-export async function getUserLocalStorage() {
+export function getUserLocalStorage() {
     const user = localStorage.getItem("user")
-    return user
+    return JSON.parse(user)
 }

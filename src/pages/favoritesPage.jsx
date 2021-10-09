@@ -4,10 +4,10 @@ import { getUserLocalStorage } from "../storageAPI/api"
 const FavoritesPage = () => {
 
     const [user, setUser] = useState({})
-
-    useEffect(async function () {
+    
+    useEffect(async function() {
         const user = await getUserLocalStorage()
-        setUser(user)
+        if(user) setUser(user)
     }, [])
 
     return (
