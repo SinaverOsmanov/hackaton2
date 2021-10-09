@@ -28,7 +28,7 @@
         "quotes": ["error", "double", {
             "avoidEscape": true
         }],
-        "space-before-function-paren": ["error", "never"],
+        "space-before-function-paren": [0, "always"],
         "prefer-const": ["off"],
         "react/prop-types": [0],
         "no-unused-vars": "warn"
