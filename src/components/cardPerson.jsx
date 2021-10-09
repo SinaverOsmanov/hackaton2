@@ -1,23 +1,32 @@
 import React from "react"
-import {Button, Card, Col} from "antd"
 import { Link } from "react-router-dom"
+import style from "./cardPerson.module.css"
 
-const CardPerson = ({user}) => {
-
+const CardPerson = ({ user }) => {
     return (
-        <Card
-            hoverable
-            style={{ width: 240 }}
-            cover={ <Col style={{backgroundSize: "cover", minHeight: "320px"}}>
-                <img alt="example" src={user.photo} />
-            </Col>}
-        >
-            <h3>{user.name}</h3>
-            <h4>{user.age} лет</h4>
-            <p>{user.about}</p>
-            <Link to={`users/${user.id}`}>Открыть</Link>
-            <Button type="primary" block>Добавить в избранное</Button>
-        </Card>
+        <div className={style.cards}>
+            <div className={style.wrapper}>
+                <div className={style.text}>
+                    <h3 className={style.h3}>{user.name}</h3>
+                    <div
+                        style={{
+                            background: `url(${user.photo}) center center`,
+                            backgroundSize: "cover",
+                        }}
+                        className={style.image}
+                    ></div>
+
+                    <h4 className={style.h4}>{user.age} лет</h4>
+                    <p className={style.p}>{user.about}</p>
+                </div>
+                <div className={style.links}>
+                    <Link to={`users/${user.id}`}>
+                        <button className={style.btn}>Открыть</button>
+                    </Link>
+                    <button className={style.btn}>В избранное</button>
+                </div>
+            </div>
+        </div>
     )
 }
 
