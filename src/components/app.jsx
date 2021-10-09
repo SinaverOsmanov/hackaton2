@@ -8,6 +8,8 @@ function App() {
     useEffect(() => {
         setUserLocalStorage()
     }, [])
+
+
     return (
         <div className="container">
             <ProgressBar skillName={"ivan"} color={"blue"} type={"bar"} percents={75} />
