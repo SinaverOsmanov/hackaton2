@@ -1,10 +1,15 @@
+import { Row } from "antd"
 import React from "react"
+import { useParams } from "react-router"
 
 const UserPage = () => {
+    const {userId} = useParams()
+
+    
     return (
-        <div>
+        <Row>
             User Page
-        </div>
+        </Row>
     )
 }
 
