@@ -22,8 +22,7 @@ export default function FavoritesPage() {
 }
 
 
-function User(user) {
-    console.log(user)
+export function User({user}) {
     return (
         <Row>
             <Col offset={1} span={6}>
