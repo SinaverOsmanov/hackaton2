@@ -5,7 +5,7 @@ export function setUsersLocalStorage() {
         age: 30,
         about: "teamlead",
         photo: "https://sun9-88.userapi.com/impf/ez9T7o5K2HteeSsuNbhxF0RUUURa8AQc7paXvg/5swS7OTw0ZQ.jpg?size=1440x1920&quality=96&sign=8a3f65ca8a7a9cf5a7feb6c7816b2507&type=album",
-        social: ["www.webcam.com", "www.badoo.com", "www.instagram.com"],
+        social: ["www.onlyfans.com", "www.badoo.com", "www.instagram.com"],
         whatDoing: ["smoking", "cleaning"],
         favorite: false,
         skills: ["HTML", "CSS", "React"]
@@ -30,7 +30,7 @@ export function setUsersLocalStorage() {
         favorite: false,
         skills: ["HTML", "CSS", "React"]
     }, {
-        id: 29,
+        id: 4,
         name: "Sinaver Random",
         age: 25,
         about: "tech lead",
@@ -48,4 +48,12 @@ export function setUsersLocalStorage() {
 export function getUsersLocalStorage() {
     const users = localStorage.getItem("users")
     return JSON.parse(users)
+}
+
+export function getUserByIdLocalStorage(userId) {
+    let users = localStorage.getItem("users")
+    users = JSON.parse(users)
+    if(users.length > 0) {
+        return users.find(u=> u.id === Number(userId))
+    }
 }
