@@ -1,12 +1,16 @@
 .menu {
     margin: 30px 0;
+    border-bottom: 2px solid #76360a;
+}
+
+.wrapper {
+    margin-bottom: 25px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-content: center;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid #76360a;
 }
 
 .item {
@@ -14,6 +18,7 @@
     position: relative;
     marker: none;
     padding: 10px;
+    height: 60px;
 }
 
 .btn {
