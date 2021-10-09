@@ -10,7 +10,7 @@ const Progress = ({ skillName, type, color, percents }) => {
     }
     if (type === "circle") {
         <div className="progress yellow"> <span className="progress-left"> <span className="progress-bar"></span> </span> <span className="progress-right"> <span className="progress-bar"></span> </span>
-            <div className="progress-value">37.5%</div>
+            <div className="progress-value">{percents}%</div>
         </div>
     }
 }

@@ -4,10 +4,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -15,19 +12,21 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
+    "plugins": ["react"],
     "rules": {
         "semi": ["error", "never"],
         "indent": ["error", 4],
-        "linebreak-style":"off",
-        "arrow-parens":"off",
-        "require-jsdoc":"off",
-        "operator-linebreak":"off",
-        "quotes": ["error", "double", {
-            "avoidEscape": true
-        }],
+        "linebreak-style": "off",
+        "arrow-parens": "off",
+        "require-jsdoc": "off",
+        "operator-linebreak": "off",
+        "quotes": [
+            "error",
+            "double",
+            {
+                "avoidEscape": true
+            }
+        ],
         "space-before-function-paren": ["error", "never"],
         "prefer-const": ["off"],
         "react/prop-types": [0],
