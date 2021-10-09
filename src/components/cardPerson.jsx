@@ -1,9 +1,29 @@
 import React from "react"
 
 const CardPerson = () => {
+    const user = {
+        id: 1,
+        name: "Denis Random",
+        age: 30,
+        about: "teamlead",
+        photo: "no photo",
+        social: "www.vk.com",
+        whatDoing: ["smoking", "cleaning"]
+    }
     return (
-        <div>
-            User card
+        <div className="card">
+            <img src={user.about} className="card-img-top" alt="photo"/>
+            <div className="card-body">
+                <h5 className="card-title">{user.name}</h5>
+                <div>
+                    <p className="card-text">{user.age}</p>
+                    <p className="card-text">{user.about}</p>
+                    <a href="/" className="card-text">{user.social}</a>
+                    <p className="card-text">{user.whatDoing.map(action => `${action} `)}</p>
+                </div>
+                <a href="#" className="btn btn-primary">Открыть</a>
+                <a href="#" className="btn btn-primary">Избранное</a>
+            </div>
         </div>
     )
 }

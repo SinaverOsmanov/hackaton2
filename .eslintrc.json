@@ -2,7 +2,7 @@
     "parser": "babel-eslint",
     "env": {
         "browser": true,
-        "ES5": true
+        "es2021": true
     },
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
@@ -27,7 +27,7 @@
                 "avoidEscape": true
             }
         ],
-        "space-before-function-paren": [0, "always"],
+        "space-before-function-paren": ["error", "never"],
         "prefer-const": ["off"],
         "react/prop-types": [0],
         "no-unused-vars": "warn"
