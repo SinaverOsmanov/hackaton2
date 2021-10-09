@@ -26,8 +26,8 @@ const UserPage = () => {
                 <Row>О себе: {user.about}</Row>
                 <Row gutter={5}>
                     <Col span={2}>Hard skills: </Col>
-                    <Col span={20}>
-                        <Row justify="start">{user.skills.map((s, i)=> <span key={i} style={{marginRight: "5px"}}>{s}</span>)}</Row> 
+                    <Col span={19 }>
+                        <Row justify="start">{user.skills.map((s, i)=> <Col key={i}><span style={{marginRight: "5px"}}>{s.title}</span><span>{s.percent}</span>, </Col>)}</Row> 
                     </Col>
                 </Row>
                 <Row>
