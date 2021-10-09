@@ -8,6 +8,8 @@ function App() {
     useEffect(() => {
         setUserLocalStorage()
     }, [])
+
+
     return (
         <div className="container">
             <BadgeComponent />
