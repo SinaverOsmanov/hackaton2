@@ -6,7 +6,7 @@ const ProgressBar = ({ skillName, type, color, percents }) => {
         <>
             <p className="text-start">{skillName}</p>
             <div style={{ maxWidth: 20 + "%", maxHeight: 20 + "%", }}>
-                {type === "cicrle" ? <Progress type={type} percent={percents} strokeColor={color} /> : <Progress percent={percents} strokeColor={color} />}
+                {type === "circle" ? <Progress type={type} percent={percents} strokeColor={color} /> : <Progress percent={percents} strokeColor={color} />}
             </div>
         </>)
 }
