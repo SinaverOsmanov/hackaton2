@@ -1,13 +1,16 @@
-import React from "react"
-import Routers from "./routers"
+import React, { useEffect } from "react"
 import Header from "./header"
 import Content from "./content"
+import { setUserLocalStorage } from "../storageAPI/api"
 
 function App() {
+    useEffect(() => {
+        setUserLocalStorage()
+    }, [])
     return (
         <div className="container">
-            <Header/>
-            <Content/>
+            <Header />
+            <Content />
         </div>
     )
 }
