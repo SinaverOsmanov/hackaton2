@@ -1,0 +1,31 @@
+.menu {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    list-style-type: none;
+    position: relative;
+    marker: none;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #ffc107ab;
+    border: 2px solid #8a3d0a;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 2px rgb(181 59 59 / 55%) !important;
+    outline: none !important;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #ca3030;
+}
