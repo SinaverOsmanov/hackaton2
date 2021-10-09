@@ -1,11 +1,18 @@
 import React from "react"
 
-const Progress = () => {
-    return (
-        <div>
-            Progress
+const Progress = ({ skillName, type, color, percents }) => {
+    if (type === "bar") {
+        return (
+            <div classNameName={"progress " + color} style={{ maxWidth: 25 + "%" }}>
+                <div classNameName="progress-bar" role="progressbar" style={{ width: percents + "%" }} aria-valuenow={percents} aria-valuemin="0" aria-valuemax="100">{percents}%</div>
+            </div >
+        )
+    }
+    if (type === "circle") {
+        <div className="progress yellow"> <span className="progress-left"> <span className="progress-bar"></span> </span> <span className="progress-right"> <span className="progress-bar"></span> </span>
+            <div className="progress-value">37.5%</div>
         </div>
-    )
+    }
 }
 
 export default Progress
