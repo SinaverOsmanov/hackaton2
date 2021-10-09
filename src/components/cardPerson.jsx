@@ -8,6 +8,7 @@ const CardPerson = () => {
         const userData = await getUserLocalStorage()
         if(userData) setUser(userData)
     }, [])
+    
     if(!user) {
         return "loading"
     }
@@ -20,7 +21,7 @@ const CardPerson = () => {
                     <p className="card-text">{user.age}</p>
                     <p className="card-text">{user.about}</p>
                     <a href="/" className="card-text">{user.social}</a>
-                    <p className="card-text">{user.whatDoing.map(action => `${action} `)}</p>
+                    <p className="card-text">{user.whatDoing && user.whatDoing.map(action => `${action} `)}</p>
                 </div>
                 <a href="#" className="btn btn-primary">Открыть</a>
                 <a href="#" className="btn btn-primary">Избранное</a>
