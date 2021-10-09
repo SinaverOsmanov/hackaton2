@@ -1,11 +1,14 @@
 import React from "react"
+import { Tag } from "antd"
 
-const Badge = () => {
+const BadgeComponent = ({ title, color, id }) => {
     return (
-        <div>
-            bage
-        </div>
+        <span>
+            <Tag color={color} key={id} >
+                {title.toUpperCase()}
+            </Tag>
+        </span>
     )
 }
 
-export default Badge
+export default BadgeComponent

@@ -9,9 +9,11 @@ const CardPerson = ({user, onClickFavorite}) => {
         <Card
             hoverable
             style={{ width: 240 }}
-            cover={ <Col style={{backgroundSize: "cover", minHeight: "320px"}}>
-                <img alt="example" src={user.photo} />
-            </Col>}
+            cover={ 
+                <Col style={{backgroundSize: "cover", minHeight: "320px"}}>
+                    <img alt="example" src={user.photo} />
+                </Col>
+            }
         >
             <h3>{user.name}</h3>
             <h4>{user.age} лет</h4>
