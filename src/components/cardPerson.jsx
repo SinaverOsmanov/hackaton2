@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { getUserLocalStorage } from "../storageAPI/api"
+import {Button, Card} from "antd"
 
 const CardPerson = () => {
     const [user, setUser] = useState({})
@@ -9,20 +10,17 @@ const CardPerson = () => {
         if(userData) setUser(userData)
     }, [])
     return (
-        <div className="card">
-            <img src={user.photo} className="card-img-top" alt="photo"/>
-            <div className="card-body">
-                <h5 className="card-title">{user.name}</h5>
-                <div>
-                    <p className="card-text">{user.age}</p>
-                    <p className="card-text">{user.about}</p>
-                    <a href="/" className="card-text">{user.social}</a>
-                    <p className="card-text">{user.whatDoing && user.whatDoing.map(action => `${action} `)}</p>
-                </div>
-                <a href="#" className="btn btn-primary">Открыть</a>
-                <a href="#" className="btn btn-primary">Избранное</a>
-            </div>
-        </div>
+        <Card
+            hoverable
+            style={{ width: 240 }}
+            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+        >
+            <h3>{user.name}</h3>
+            <h4>{user.age} лет</h4>
+            <p>{user.about}</p>
+            <Button type="link" size="large" block>Открыть</Button>
+            <Button type="primary" block>Добавить в избранное</Button>
+        </Card>
     )
 }
 

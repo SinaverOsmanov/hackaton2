@@ -1,9 +1,10 @@
 import React from "react"
+import CardPerson from "../components/cardPerson"
 
 const HomePage = () => {
     return (
         <div>
-            Home
+            <CardPerson/>
         </div>
     )
 }
