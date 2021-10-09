@@ -13,7 +13,7 @@ const CardPerson = () => {
         <Card
             hoverable
             style={{ width: 240 }}
-            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            cover={<img alt="example" src={user.photo} />}
         >
             <h3>{user.name}</h3>
             <h4>{user.age} лет</h4>
