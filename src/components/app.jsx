@@ -10,7 +10,7 @@ function App() {
     }, [])
     return (
         <div className="container">
-            <Progress color={"yellow"} type={"circle"} percents={75} />
+            <Progress skillName={"ivan"} color={"blue"} type={"bar"} percents={75} />
             <Header />
             <Content />
         </div>
