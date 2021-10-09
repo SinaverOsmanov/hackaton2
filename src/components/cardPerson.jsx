@@ -3,7 +3,7 @@ import { getUserLocalStorage } from "../storageAPI/api"
 import {Button, Card} from "antd"
 
 const CardPerson = () => {
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState()
 
     useEffect(async function() {
         const userData = await getUserLocalStorage()
