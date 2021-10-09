@@ -1,9 +1,13 @@
 import React from "react"
+import { Button } from "antd"
 
-const Button = () => {
+const ButtonComponent = ({ color, clickHandler, btnName, shape, size, type }) => {
     return (
-        <button>Click me</button>
+        // <span><button style={{ background: color }} onClick={(event) => clickHandler()} type={type}>{btnName}</button> </span>
+        <span> <Button type={type} shape={shape} style={{ background: color }} size={size} onClick={(event) => clickHandler()}>
+            {btnName}
+        </Button></span>
     )
 }
 
-export default Button
+export default ButtonComponent

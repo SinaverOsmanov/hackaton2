@@ -2,7 +2,9 @@ import React from "react"
 import { Link } from "react-router-dom"
 import style from "./cardPerson.module.css"
 
-const CardPerson = ({ user }) => {
+const CardPerson = ({ user, onClickFavorite }) => {
+    const favorite = user.favorite ? "Удалить из избранного" : "Добавить в избранное"
+    
     return (
         <div className={style.cards}>
             <div className={style.wrapper}>
@@ -23,11 +25,10 @@ const CardPerson = ({ user }) => {
                     <Link to={`users/${user.id}`}>
                         <button className={style.btn}>Открыть</button>
                     </Link>
-                    <button className={style.btn}>В избранное</button>
+                    <button className={style.btn} onClick={()=>onClickFavorite(user.id)>{favorite}</button>
                 </div>
             </div>
         </div>
-    )
+   )
 }
-
 export default CardPerson
