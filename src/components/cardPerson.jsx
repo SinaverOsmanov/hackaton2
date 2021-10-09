@@ -5,10 +5,10 @@ const CardPerson = () => {
     const [user, setUser] = useState({})
     
     useEffect(async function() {
-        const user = await getUserLocalStorage()
-        if(user) setUser(user)
+        const userData = await getUserLocalStorage()
+        if(userData) setUser(userData)
     }, [])
-    
+
     return (
         <div className="card">
             <img src={user.about} className="card-img-top" alt="photo"/>

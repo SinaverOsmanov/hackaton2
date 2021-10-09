@@ -6,7 +6,9 @@ export function setUserLocalStorage() {
         about: "teamlead",
         photo: "no photo",
         social: "www.vk.com",
-        whatDoing: ["smoking", "cleaning"]
+        whatDoing: ["smoking", "cleaning"],
+        favorite: false,
+        skills: ["HTML", "CSS", "React"]
     }
 
     localStorage.setItem("user", JSON.stringify(user))
