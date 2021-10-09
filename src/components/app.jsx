@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import Header from "./header"
 import Content from "./content"
 import { setUserLocalStorage } from "../storageAPI/api"
-import Progress from "./progress"
+import ProgressBar from "./progress"
 
 function App() {
     useEffect(() => {
@@ -10,7 +10,7 @@ function App() {
     }, [])
     return (
         <div className="container">
-            <Progress skillName={"ivan"} color={"blue"} type={"bar"} percents={75} />
+            <ProgressBar skillName={"ivan"} color={"blue"} type={"bar"} percents={75} />
             <Header />
             <Content />
         </div>
