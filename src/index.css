@@ -1,4 +1,5 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "antd/dist/antd.css";
 
 body {
     margin: 0;
@@ -12,4 +13,9 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

@@ -1,28 +1,23 @@
-import React, { useEffect, useState } from "react"
-import { getUserLocalStorage } from "../storageAPI/api"
+import React from "react"
+import {Button, Card, Col} from "antd"
+import { Link } from "react-router-dom"
 
-const CardPerson = () => {
-    const [user, setUser] = useState({})
+const CardPerson = ({user}) => {
 
-    useEffect(async function() {
-        const userData = await getUserLocalStorage()
-        if(userData) setUser(userData)
-    }, [])
     return (
-        <div className="card">
-            <img src={user.photo} className="card-img-top" alt="photo"/>
-            <div className="card-body">
-                <h5 className="card-title">{user.name}</h5>
-                <div>
-                    <p className="card-text">{user.age}</p>
-                    <p className="card-text">{user.about}</p>
-                    <a href="/" className="card-text">{user.social}</a>
-                    <p className="card-text">{user.whatDoing && user.whatDoing.map(action => `${action} `)}</p>
-                </div>
-                <a href="#" className="btn btn-primary">Открыть</a>
-                <a href="#" className="btn btn-primary">Избранное</a>
-            </div>
-        </div>
+        <Card
+            hoverable
+            style={{ width: 240 }}
+            cover={ <Col style={{backgroundSize: "cover", minHeight: "320px"}}>
+                <img alt="example" src={user.photo} />
+            </Col>}
+        >
+            <h3>{user.name}</h3>
+            <h4>{user.age} лет</h4>
+            <p>{user.about}</p>
+            <Link to={`users/${user.id}`}>Открыть</Link>
+            <Button type="primary" block>Добавить в избранное</Button>
+        </Card>
     )
 }
 
