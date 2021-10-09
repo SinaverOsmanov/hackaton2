@@ -4,8 +4,8 @@ import { Progress } from "antd"
 const ProgressBar = ({ skillName, type, color, percents }) => {
     return (
         <>
-            <p className="text-start">{skillName}</p>
             <div style={{ maxWidth: 20 + "%", maxHeight: 20 + "%", }}>
+                <p className="text-center">{skillName}</p>
                 {type === "circle" ? <Progress type={type} percent={percents} strokeColor={color} /> : <Progress percent={percents} strokeColor={color} />}
             </div>
         </>
