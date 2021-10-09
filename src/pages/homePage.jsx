@@ -1,7 +1,7 @@
 import { Row } from "antd"
 import React, { useEffect, useState } from "react"
-import CardPerson from "../components/cardPerson"
-import style from "../components/cardPerson.module.css"
+import CardPerson from "../components/cardPerson/cardPerson"
+import style from "../components/cardPerson/cardPerson.module.css"
 import { getUsersLocalStorage, setUsersLocalStorage } from "../storageAPI/api"
 
 const HomePage = () => {

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
-import Header from "./header"
-import Content from "./content"
-import { setUsersLocalStorage } from "../storageAPI/api"
-import ProgressBar from "./progress"
+import Header from "../header"
+import Content from "../content"
+import { setUsersLocalStorage } from "../../storageAPI/api"
+import ProgressBar from "../progress"
 import { Layout } from "antd"
 import style from "./app.module.css"
 
