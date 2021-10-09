@@ -8,13 +8,14 @@ const Progress = ({ skillName, type, color, percents }) => {
         yellow: "bg-warning",
         red: "bg-danger"
     }
+    
     if (type === "bar") {
         return (
             <>
                 <p className="text-start">{skillName}</p>
                 <div className={"progress"} style={{ maxWidth: 25 + "%" }}>
                     <div className={"progress-bar " + bgColor[color]} role="progressbar" style={{ width: percents + "%" }} aria-valuenow={percents} aria-valuemin="0" aria-valuemax="100">{percents}%</div>
-                </div >
+                </div>
             </>
         )
     }

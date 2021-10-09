@@ -1,10 +1,18 @@
-import React from "react"
-import { useUser } from "../components/utils/hooks/useUser"
+import React, { useEffect, useState } from "react"
+import { getUserLocalStorage } from "../storageAPI/api"
 
 const FavoritesPage = () => {
     
-    const user = useUser()
-    if(!user) {
+    const [user, setUser] = useState("loading")
+    
+    useEffect(()=>{
+        const userData = getUserLocalStorage()
+        if(userData) setUser(userData)
+
+    }, [])
+
+
+    if(user === "loading") {
         return "loading"
     }
     return (

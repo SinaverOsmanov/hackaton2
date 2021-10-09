@@ -12,6 +12,7 @@ const CardPerson = () => {
     if(!user) {
         return "loading"
     }
+    
     return (
         <div className="card">
             <img src={user.photo} className="card-img-top" alt="photo" />
