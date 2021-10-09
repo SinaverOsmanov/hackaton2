@@ -1,5 +1,5 @@
 import React from "react"
-import {Button, Card, Col} from "antd"
+import { Button, Card, Col } from "antd"
 import { Link } from "react-router-dom"
 
 const CardPerson = ({user}) => {
