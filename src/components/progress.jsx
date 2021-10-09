@@ -1,31 +1,14 @@
 import React from "react"
+import { Progress } from "antd"
 
-const Progress = ({ skillName, type, color, percents }) => {
-    const bgColor = {
-        blue: "",
-        green: "bg-success",
-        azure: "bg-info",
-        yellow: "bg-warning",
-        red: "bg-danger"
-    }
-    
-    if (type === "bar") {
-        return (
-            <>
-                <p className="text-start">{skillName}</p>
-                <div className={"progress"} style={{ maxWidth: 25 + "%" }}>
-                    <div className={"progress-bar " + bgColor[color]} role="progressbar" style={{ width: percents + "%" }} aria-valuenow={percents} aria-valuemin="0" aria-valuemax="100">{percents}%</div>
-                </div>
-            </>
-        )
-    }
-    if (type === "circle") {
-        return (
-            <div className="progress yellow"> <span className="progress-left"> <span className="progress-bar"></span> </span> <span className="progress-right"> <span className="progress-bar"></span> </span>
-                <div className="progress-value">{percents}%</div>
+const ProgressBar = ({ skillName, type, color, percents }) => {
+    return (
+        <>
+            <p className="text-start">{skillName}</p>
+            <div style={{ maxWidth: 20 + "%", maxHeight: 20 + "%", }}>
+                {type === "circle" ? <Progress type={type} percent={percents} strokeColor={color} /> : <Progress percent={percents} strokeColor={color} />}
             </div>
-        )
-    }
+        </>)
 }
 
-export default Progress
+export default ProgressBar
