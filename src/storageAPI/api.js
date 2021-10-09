@@ -1,3 +1,4 @@
+    
 const newUsers = [{
     id: 1,
     name: "Denis Random",
@@ -13,7 +14,7 @@ const newUsers = [{
     name: "Alesya Random",
     age: 25,
     about: "play LOL",
-    photo: "https://sun9-55.userapi.com/impg/c9IO4yz6AJ_Lftcu_P5mYM3zQZ54dzekkvYBWg/zFuhZCxJS0o.jpg?size=1884x2048&quality=96&sign=b3cb129fdaa7c0e7472e79a63dff87e9&type=album",
+    photo: "https://sun9-72.userapi.com/impg/pj40oJM5_ELN6oJgjMY2Oe4_OoJPdGEBJokFKA/rqhaZRsEkZg.jpg?size=550x680&quality=96&sign=6258684ff848711272c78c9c4b91f250&type=album",
     social: ["www.vk.com"],
     whatDoing: ["drink of tea"],
     favorite: false,
@@ -44,9 +45,7 @@ const newUsers = [{
 export function setUsersLocalStorage(users=newUsers) {
     localStorage.clear()
     localStorage.setItem("users", JSON.stringify(users === "undefined" ? newUsers : users))
-
 }
-
 export function getUsersLocalStorage() {
     const users = localStorage.getItem("users")
     return JSON.parse(users)

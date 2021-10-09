@@ -1,6 +1,7 @@
 import { Row } from "antd"
 import React, { useEffect, useState } from "react"
 import CardPerson from "../components/cardPerson"
+import style from "../components/cardPerson.module.css"
 import { getUsersLocalStorage, setUsersLocalStorage } from "../storageAPI/api"
 
 const HomePage = () => {
@@ -8,9 +9,9 @@ const HomePage = () => {
 
     useEffect(() => {
         const userData = getUsersLocalStorage()
-        if(userData) setUsers(userData)
+        if (userData) setUsers(userData)
     }, [])
-    
+
     if(!users) return "loading"
 
     function clickFavoriteUserHandler(id){
@@ -20,7 +21,7 @@ const HomePage = () => {
     }
     
     return (
-        <Row gutter={10} justify="space-between">
+        <Row gutter={10} justify="center" className={style.common}>
             {users.map( u => <CardPerson user={u} key={u.id} onClickFavorite={clickFavoriteUserHandler} />)}
         </Row>
     )
