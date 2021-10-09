@@ -8,7 +8,7 @@ const CardPerson = () => {
         const userData = await getUserLocalStorage()
         if(userData) setUser(userData)
     }, [])
-    
+
     return (
         <div className="card">
             <img src={user.photo} className="card-img-top" alt="photo"/>
