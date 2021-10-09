@@ -1,4 +1,4 @@
-import { Row } from "antd"
+import { Row, Col } from "antd"
 import React, { useEffect, useState } from "react"
 import CardPerson from "../components/cardPerson"
 import { getUsersLocalStorage } from "../storageAPI/api"
@@ -14,7 +14,7 @@ const HomePage = () => {
     if(!users) {
         return "loading"
     }
-    console.log(users)
+
     return (
         <Row gutter={10} justify="space-between">
             {users.map(u=><CardPerson user={u} key={u.id}/>)}
