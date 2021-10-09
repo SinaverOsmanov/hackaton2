@@ -1,15 +1,14 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import { getUserLocalStorage } from "../storageAPI/api"
 
 const CardPerson = () => {
-    const user = {
-        id: 1,
-        name: "Denis Random",
-        age: 30,
-        about: "teamlead",
-        photo: "no photo",
-        social: "www.vk.com",
-        whatDoing: ["smoking", "cleaning"]
-    }
+    const [user, setUser] = useState({})
+    
+    useEffect(async function() {
+        const user = await getUserLocalStorage()
+        if(user) setUser(user)
+    }, [])
+    
     return (
         <div className="card">
             <img src={user.about} className="card-img-top" alt="photo"/>
