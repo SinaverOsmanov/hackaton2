@@ -5,6 +5,7 @@ import { setUsersLocalStorage } from "../storageAPI/api"
 import ProgressBar from "./progress"
 import { Layout } from "antd"
 import BadgeComponent from "./badge"
+import ButtonComponent from "./button"
 
 function App() {
     useEffect(() => {
@@ -17,8 +18,7 @@ function App() {
             <ProgressBar skillName={"ivan"} color={"blue"} type={"bar"} percents={75} />
             <Header />
             <Content />
-            <BadgeComponent color={"blue"} title={"klhjhg"} />
-            <BadgeComponent color={"red"} title={"PRIVET MIR"} />
+            <ButtonComponent color="red" btnName="Privet Moscow" size="medium" type="danger" shape="round" />
         </Layout>
     )
 }
