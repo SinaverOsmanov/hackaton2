@@ -1,6 +1,6 @@
 import React from "react"
 
-const Favorites = () => {
+const FavoritesPage = () => {
     return (
         <div>
             SINAVER DELAET NE LEZEM!
@@ -8,4 +8,4 @@ const Favorites = () => {
     )
 }
 
-export default Favorites
+export default FavoritesPage
