@@ -1,6 +1,4 @@
-import { Button } from "antd"
 import React from "react"
-import ButtonComponent from "../button"
 import { SliderPropsType } from "../utils/types"
 import { Carousel } from "antd"
 

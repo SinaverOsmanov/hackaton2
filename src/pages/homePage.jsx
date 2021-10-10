@@ -4,7 +4,7 @@ import CardPerson from "../components/cardPerson/cardPerson"
 import style from "../components/cardPerson/cardPerson.module.css"
 import { favoriteReducerAction } from "../reducers/favoriteReducer"
 import { getUserFavoriteLocalStorage, getUsersLocalStorage, setUsersLocalStorage } from "../storageAPI/api"
-import { Context } from "./../storageAPI/favoriteContext"
+import { Context } from "../storageAPI/favoriteContext"
 
 const HomePage = () => {
     const [users, setUsers] = useState(() => { return getUsersLocalStorage() })

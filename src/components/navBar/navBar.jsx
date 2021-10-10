@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import style from "./navBar.module.css"
 import { Context } from "./../../storageAPI/favoriteContext"
 import { Badge } from "antd"
-import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
 import ButtonComponent from "../button"
 
 
