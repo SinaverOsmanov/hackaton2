@@ -25,13 +25,6 @@ function App() {
                     />
                     <Content callback={callback} />
                 </div>
-                <ProgressBar
-                    skillName={"ivan"}
-                    color={"blue"}
-                    type={"bar"}
-                    percents={75}
-                />
-                <Content callback={callback} />
             </div>
         </Layout>
     )
