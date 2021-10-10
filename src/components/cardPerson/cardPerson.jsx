@@ -34,7 +34,7 @@ const CardPerson = ({ user, onClickFavorite }) => {
                     ))}
                 </div>
                 <div className={style.links}>
-                    <Link to={`users/${user.id}`} className={style.btn}>
+                    <Link to={`/hackaton2/users/${user.id}`} className={style.btn}>
                         Открыть
                     </Link>
                     <ButtonComponent

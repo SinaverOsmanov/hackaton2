@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className={style.menu}>
             <div className={style.wrapper}>
                 <li className={style.item}>
-                    <Link to="/">
+                    <Link to="/hackaton2/">
                         {
                             <ButtonComponent
                                 setting={style.btn}
@@ -30,7 +30,7 @@ const NavBar = () => {
                 </li>
                 <li className={style.item}>
                     <Link
-                        to="/favorites"
+                        to="/hackaton2/favorites"
                         style={{ position: "relative" }}
                         className={`${style.btn} btn`}
                     >

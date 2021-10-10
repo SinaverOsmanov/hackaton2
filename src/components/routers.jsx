@@ -8,11 +8,12 @@ import ErrorPage from "../pages/errorPage"
 const Routers = () => {
     return (
         <Switch>
-            <Route path="/" component={HomePage} exact/>
-            <Route path="/users/:userId" component={UserPage}/>
-            <Route path="/favorites" component={FavoritesPage}/>
-            <Route path="/error" component={ErrorPage}/>
-            <Redirect to="/error"/>
+            <Route path="/hackaton2/" exact component={HomePage} />
+            <Route path="/hackaton2/users/:userId" component={UserPage}/>
+            <Route path="/hackaton2/favorites" component={FavoritesPage}/>
+            <Route path="/hackaton2/error" component={ErrorPage}>
+                <Redirect to="/hackaton2error"/>
+            </Route>
         </Switch>
     )
 }

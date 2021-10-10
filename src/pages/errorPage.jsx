@@ -8,7 +8,7 @@ const ErrorPage = () => {
         <Col>
             <Row justify='center'>К сожалению такой страницы нет, вернитесь на главную и попробуйте ещё раз</Row>
             <Row>
-                <Link to='/'>на главную</Link>
+                <Link to='/hackaton2/'>на главную</Link>
             </Row>
         </Col>
     )
