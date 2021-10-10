@@ -1,21 +1,21 @@
 import React from "react"
 import { Progress } from "antd"
 
-const ProgressBar = ({skillName, type, color, percents}) => {
+const ProgressBar = ({ skillName, type, color, percents }) => {
     const changeColor = (name) => {
-        let colorBar
+        let colorBar = ""
         switch (name) {
-            case "HTML":
-                colorBar = "#fa541c"
-                break
-            case "CSS":
-                colorBar = "#531dab"
-                break
-            case "React":
-                colorBar = "#1890ff"
-                break
-            default:
-                break
+        case "HTML":
+            colorBar = "#fa541c"
+            break
+        case "CSS":
+            colorBar = "#531dab"
+            break
+        case "React":
+            colorBar = "#1890ff"
+            break
+        default:
+            break
         }
         return colorBar
     }
