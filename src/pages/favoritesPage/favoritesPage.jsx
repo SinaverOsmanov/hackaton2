@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
-import { User } from "../../components/user"
+import { User } from "../../components/user/user"
 import SliderComponent from "../../components/customSlider/slider"
 
 export default function FavoritesPage() {

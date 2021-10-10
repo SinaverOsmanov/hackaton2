@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import { User } from "../../components/user"
-import { getUserByIdLocalStorage } from "../../storageAPI/api"
+import { User } from "../components/user/user"
+import { getUserByIdLocalStorage } from "../storageAPI/api"
 
 const UserPage = () => {
     const { userId } = useParams()

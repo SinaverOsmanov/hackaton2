@@ -1,10 +1,10 @@
 import { Col, Row } from "antd"
 import React from "react"
-import ProgressBar from "./progress"
-import favStyle from "../pages/favoritesPage/favoritesPage.module.css"
-import userStyle from "../pages/userPage/user.module.css"
-import BadgeComponent from "./badge"
-import { randomColorRGB } from "./utils/rgbColor"
+import ProgressBar from "../progress"
+import favStyle from "../../pages/favoritesPage/favoritesPage.module.css"
+import userStyle from "./user.module.css"
+import BadgeComponent from "../badge"
+import { randomColorRGB } from "../utils/rgbColor"
 
 export function User({ user, text }) {
     let style = text === "favStyle" ? favStyle : userStyle

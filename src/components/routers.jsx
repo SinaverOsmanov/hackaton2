@@ -1,7 +1,7 @@
 import React from "react"
 import {Switch, Route, Redirect} from "react-router-dom"
 import HomePage from "../pages/homePage"
-import UserPage from "../pages/userPage/userPage"
+import UserPage from "../pages/userPage"
 import FavoritesPage from "../pages/favoritesPage/favoritesPage"
 import ErrorPage from "../pages/errorPage"
 
