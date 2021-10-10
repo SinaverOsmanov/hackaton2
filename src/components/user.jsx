@@ -18,22 +18,26 @@ export function User({ user, text }) {
                 />
                 <div className={style.text}>
                     <h3>{user.name}</h3>
-                    <p>
-                        <b>Возраст:</b> {user.age} лет
+                    <p className={style.p}>
+                        <b className={style.b}>Возраст:</b> {user.age} лет
                     </p>
-                    <p>
-                        <b>О себе:</b> {user.about}
+                    <p className={style.p}>
+                        <b className={style.b}>О себе:</b> {user.about}
                     </p>
-                    <p>
-                        <b>Соц.сети:</b>
+                    <p className={style.p}>
+                        <b className={style.b}>Соц.сети:</b>
                     </p>
                     {user.social.map((s, i) => (
-                        <span key={i} style={{ marginRight: "5px" }}>
+                        <span
+                            className={style.span}
+                            key={i}
+                            style={{ marginRight: "5px" }}
+                        >
                             {s}
                         </span>
                     ))}
                     <p className={style.skills}>
-                        <b>Хард скилы:</b>
+                        <b className={style.b}>Хард скилы:</b>
                     </p>
                     <Row>
                         {user.skills.map((s, i) => (

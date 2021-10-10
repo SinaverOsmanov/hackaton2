@@ -33,7 +33,13 @@ img {
     margin-bottom: 20px;
 }
 
-p {
+.p,
+.span {
+    font-size: 20px;
     margin: 0;
     padding: 0;
+}
+
+.b {
+    font-size: 19px;
 }
