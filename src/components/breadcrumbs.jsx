@@ -1,22 +1,15 @@
 import React from "react"
-import { Switch, Route, Redirect, useLocation } from "react-router-dom"
-import HomePage from "../pages/homePage"
-import UserPage from "../pages/userPage"
-import FavoritesPage from "../pages/favoritesPage"
-import ErrorPage from "../pages/errorPage"
+import { useLocation, Link } from "react-router-dom"
 import { Breadcrumb } from "antd"
 
 const BreadcrumbsComponent = () => {
     const { pathname } = useLocation()
     if (pathname === "/") return null
-    let title = pathname.slice(1, pathname.length - 1)
-    title = title[0].toUpperCase() + title.slice(1)
+    const title2 = pathname.split("/").filter(e => e !== "")
     return (
         <Breadcrumb>
-            <Breadcrumb.Item>{<a href="/">Main</a>}</Breadcrumb.Item>
-            <Breadcrumb.Item>
-                {title}
-            </Breadcrumb.Item>
+            <Breadcrumb.Item ><Link to="/">Main</Link></Breadcrumb.Item>
+            {title2.map(t => (<Breadcrumb.Item key={t}><Link to={t}>{t = t[0].toUpperCase() + t.slice(1)}</Link></Breadcrumb.Item>))}
         </Breadcrumb>
     )
 }
