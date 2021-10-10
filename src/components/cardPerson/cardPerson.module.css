@@ -88,4 +88,6 @@ a:hover {
 
 .p {
     margin-bottom: 3px;
+    max-height: 50px;
+    overflow-y: hidden;
 }

@@ -3,6 +3,7 @@ import React from "react"
 import ProgressBar from "./progress"
 import favStyle from "../pages/favoritesPage.module.css"
 import userStyle from "../pages/user.module.css"
+import BadgeComponent from "./badge"
 
 export function User({ user, text }) {
     let style = text === "favStyle" ? favStyle : userStyle
@@ -33,7 +34,7 @@ export function User({ user, text }) {
                             key={i}
                             style={{ marginRight: "5px" }}
                         >
-                            {s}
+                            <BadgeComponent title={s} color={"red"} />
                         </span>
                     ))}
                     <p className={style.skills}>
