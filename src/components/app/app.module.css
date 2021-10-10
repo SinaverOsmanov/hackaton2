@@ -6,3 +6,8 @@
 .container {
     padding: 0 5px;
 }
+
+.comwrap {
+    width: 1200px;
+    margin: 0 auto;
+}
