@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Header from "../header"
 import Content from "../content"
 import ProgressBar from "../progress"
-import { Layout } from "antd"
+import {Badge, Layout, Progress} from "antd"
 import style from "./app.module.css"
 import BreadcrumbsComponent from "../breadcrumbs"
 
