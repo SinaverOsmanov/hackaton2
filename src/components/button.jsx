@@ -1,5 +1,6 @@
 import React from "react"
 import { Button } from "antd"
+import { ButtonPropsType } from "./utils/types"
 
 const ButtonComponent = ({ color, clickHandler, btnName, shape, size, type }) => {
     return (
@@ -8,5 +9,5 @@ const ButtonComponent = ({ color, clickHandler, btnName, shape, size, type }) =>
         </Button>
     )
 }
-
+ButtonComponent.propTypes = ButtonPropsType
 export default ButtonComponent
