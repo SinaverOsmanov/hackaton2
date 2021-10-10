@@ -3,17 +3,17 @@ import React, { useState } from "react"
 import { User } from "../pages/favoritesPage"
 import style from "./cardPerson/cardPerson.module.css"
 
-export default function ModalComponent({ user, children}) {
+export default function ModalComponent({ user, children }) {
     const [isModalVisible, setIsModalVisible] = useState(false)
 
     const showModal = () => {
         setIsModalVisible(true)
     }
-  
+
     const handleOk = () => {
         setIsModalVisible(false)
     }
-  
+
     const handleCancel = () => {
         setIsModalVisible(false)
     }
@@ -29,12 +29,21 @@ export default function ModalComponent({ user, children}) {
     return (
         <>
             <button className={style.btn} onClick={showModal}>
-                {isModalVisible ? "Close": "Open"}
+                {isModalVisible ? "Close" : "Open"}
             </button>
-            <Modal title="User" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} width={1000} bodyStyle={{background: "#fc0"}}>
+            <Modal
+                title="User"
+                visible={isModalVisible}
+                onOk={handleOk}
+                onCancel={handleCancel}
+                width={870}
+                bodyStyle={{ background: "#fc0" }}
+            >
                 <Row>
                     <Col span={8}>
-                        <Row><img src={user.photo}/></Row>
+                        <Row>
+                            <img src={user.photo} />
+                        </Row>
                         {children}
                     </Col>
                     <Col span={15} offset={1}>
@@ -48,7 +57,24 @@ export default function ModalComponent({ user, children}) {
                                         <Row>
                                             <Col span={4}>Hard skills: </Col>
                                             <Col span={20}>
-                                                <Row justify="start">{user.skills.map((s, i)=> <Col key={i}><span style={{marginRight: "5px"}}>{s.title}</span><span>{s.percent}</span>, </Col>)}</Row> 
+                                                <Row justify="start">
+                                                    {user.skills.map((s, i) => (
+                                                        <Col key={i}>
+                                                            <span
+                                                                style={{
+                                                                    marginRight:
+                                                                        "5px",
+                                                                }}
+                                                            >
+                                                                {s.title}
+                                                            </span>
+                                                            <span>
+                                                                {s.percent}
+                                                            </span>
+                                                            ,{" "}
+                                                        </Col>
+                                                    ))}
+                                                </Row>
                                             </Col>
                                         </Row>
                                     </Col>
@@ -57,7 +83,16 @@ export default function ModalComponent({ user, children}) {
                             <div>
                                 <div style={contentStyle}>
                                     <Col span={3}>Социальные ссылки: </Col>
-                                    <Col span={20}>{user.social.map((s, i)=> <span key={i} style={{marginRight: "5px"}}>{s}</span>)}</Col>
+                                    <Col span={20}>
+                                        {user.social.map((s, i) => (
+                                            <span
+                                                key={i}
+                                                style={{ marginRight: "5px" }}
+                                            >
+                                                {s}
+                                            </span>
+                                        ))}
+                                    </Col>
                                 </div>
                             </div>
                         </Carousel>
