@@ -1,9 +1,11 @@
 import { Col, Row } from "antd"
 import React from "react"
-import style from "../pages/favoritesPage.module.css"
 import ProgressBar from "./progress"
+import favStyle from "../pages/favoritesPage.module.css"
+import userStyle from "../pages/user.module.css"
 
-export function User({ user }) {
+export function User({ user, text }) {
+    let style = text === "favStyle" ? favStyle : userStyle
     return (
         <div className={style.main}>
             <div className={style.wrapper}>
@@ -17,7 +19,7 @@ export function User({ user }) {
                 <div className={style.text}>
                     <h3>{user.name}</h3>
                     <p>
-                        <b>Возраст:</b> {user.age}
+                        <b>Возраст:</b> {user.age} лет
                     </p>
                     <p>
                         <b>О себе:</b> {user.about}
@@ -30,7 +32,7 @@ export function User({ user }) {
                             {s}
                         </span>
                     ))}
-                    <p>
+                    <p className={style.skills}>
                         <b>Хард скилы:</b>
                     </p>
                     <Row>
