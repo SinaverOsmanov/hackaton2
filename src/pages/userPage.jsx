@@ -14,9 +14,7 @@ const UserPage = () => {
 
     if (!user) return "loading"
 
-    return (
-        <User user={user} />
-    )
+    return <User user={user} text={"userStyle"} />
 }
 
 export default UserPage
