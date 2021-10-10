@@ -8,7 +8,7 @@ export const newUsers = [{
     social: ["www.onlyfans.com", "www.badoo.com", "www.instagram.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
 }, {
     id: 2,
     name: "Alesya Random",
@@ -18,7 +18,7 @@ export const newUsers = [{
     social: ["www.vk.com"],
     whatDoing: ["drink of tea"],
     favorite: false,
-    skills: [{title:"HTML", percent: 20}, {title:"CSS", percent: 50}, {title:"React", percent: 70}]
+    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
 }, {
     id: 3,
     name: "Evgeniy Random",
@@ -38,7 +38,7 @@ export const newUsers = [{
     social: ["www.vk.com"],
     whatDoing: ["cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
 }
 ]
 
