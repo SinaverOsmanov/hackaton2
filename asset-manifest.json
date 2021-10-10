@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/hackaton2/static/css/main.83d92bfd.chunk.css",
-    "main.js": "/hackaton2/static/js/main.5548f237.chunk.js",
-    "main.js.map": "/hackaton2/static/js/main.5548f237.chunk.js.map",
+    "main.js": "/hackaton2/static/js/main.c442f02a.chunk.js",
+    "main.js.map": "/hackaton2/static/js/main.c442f02a.chunk.js.map",
     "runtime-main.js": "/hackaton2/static/js/runtime-main.40aaa10c.js",
     "runtime-main.js.map": "/hackaton2/static/js/runtime-main.40aaa10c.js.map",
     "static/css/2.f2273473.chunk.css": "/hackaton2/static/css/2.f2273473.chunk.css",
-    "static/js/2.76e6f17f.chunk.js": "/hackaton2/static/js/2.76e6f17f.chunk.js",
-    "static/js/2.76e6f17f.chunk.js.map": "/hackaton2/static/js/2.76e6f17f.chunk.js.map",
+    "static/js/2.898cf28a.chunk.js": "/hackaton2/static/js/2.898cf28a.chunk.js",
+    "static/js/2.898cf28a.chunk.js.map": "/hackaton2/static/js/2.898cf28a.chunk.js.map",
     "index.html": "/hackaton2/index.html",
     "static/css/2.f2273473.chunk.css.map": "/hackaton2/static/css/2.f2273473.chunk.css.map",
     "static/css/main.83d92bfd.chunk.css.map": "/hackaton2/static/css/main.83d92bfd.chunk.css.map",
-    "static/js/2.76e6f17f.chunk.js.LICENSE.txt": "/hackaton2/static/js/2.76e6f17f.chunk.js.LICENSE.txt"
+    "static/js/2.898cf28a.chunk.js.LICENSE.txt": "/hackaton2/static/js/2.898cf28a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.40aaa10c.js",
     "static/css/2.f2273473.chunk.css",
-    "static/js/2.76e6f17f.chunk.js",
+    "static/js/2.898cf28a.chunk.js",
     "static/css/main.83d92bfd.chunk.css",
-    "static/js/main.5548f237.chunk.js"
+    "static/js/main.c442f02a.chunk.js"
   ]
 }
