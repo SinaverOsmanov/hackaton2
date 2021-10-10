@@ -14,7 +14,7 @@ export default function FavoritesPage() {
         return <h2>Нет избранных</h2>
     }
     const arrayComponents = users.map((u) => (
-        <User key={u.id} user={u} />
+        <User key={u.id} user={u} text={"favStyle"} />
     ))
     return (
         <>
