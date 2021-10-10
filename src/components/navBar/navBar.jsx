@@ -5,7 +5,6 @@ import { Context } from "./../../storageAPI/favoriteContext"
 import { Badge } from "antd"
 import ButtonComponent from "../button"
 
-
 const NavBar = () => {
     const { state } = useContext(Context)
     return (

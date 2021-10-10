@@ -6,7 +6,6 @@ import userStyle from "../pages/userPage/user.module.css"
 import BadgeComponent from "./badge"
 import { randomColorRGB } from "./utils/rgbColor"
 
-
 export function User({ user, text }) {
     let style = text === "favStyle" ? favStyle : userStyle
     return (
@@ -36,15 +35,26 @@ export function User({ user, text }) {
                             key={i}
                             style={{ marginRight: "5px" }}
                         >
-                            <BadgeComponent title={s} color={randomColorRGB()} />
+                            <BadgeComponent
+                                title={s}
+                                color={randomColorRGB()}
+                            />
                         </span>
                     ))}
                     <p className={style.skills}>
                         <b className={style.b}>Хард скилы:</b>
                     </p>
-                    <Row>
+                    <Row
+                        style={{
+                            display: "flex",
+                            flexWrap: "nowrap",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
                         {user.skills.map((s, i) => (
-                            <Col key={i} span={8}>
+                            <Col key={i} span={6}>
                                 <ProgressBar
                                     percents={s.percent}
                                     skillName={s.title}
