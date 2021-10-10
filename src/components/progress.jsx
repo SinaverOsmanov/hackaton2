@@ -1,8 +1,7 @@
 import React from "react"
 import { Progress } from "antd"
-import {Progress} from "antd"
 
-const ProgressBar = ({skillName, type, color, percents}) => {
+const ProgressBar = ({ skillName, type, color, percents }) => {
     const changeColor = (name) => {
         let colorBar
         switch (name) {
