@@ -4,6 +4,7 @@ import { getUserFavoriteLocalStorage } from "../storageAPI/api"
 import { Row, Col } from "antd"
 import style from "./favoritesPage.module.css"
 import Breadcrumbs from "../components/breadcrumbs"
+import ProgressBar from "../components/progress";
 
 export default function FavoritesPage() {
     const [users, setUsers] = useState([])
@@ -56,14 +57,9 @@ export function User({ user }) {
                     <p>
                         <b>Хард скилы:</b>
                     </p>{" "}
-                    {user.skills.map((s) => (
-                        <>
-                            <span style={{ marginRight: "5px" }}>
-                                {s.title}
-                            </span>
-                            <span>{s.percent}</span>{" "}
-                        </>
-                    ))}
+                    <Row justify="space-around">
+                        {user.skills.map((s, i)=> <Col key={i}><ProgressBar percents={s.percent} skillName={s.title} type="circle"/></Col>)}
+                    </Row>
                 </div>
             </div>
         </div>
