@@ -13,16 +13,12 @@ export default function FavoritesPage() {
     if (users.length === 0) {
         return <h2>Нет избранных</h2>
     }
-    const arrayComponets = users.map((u) => (
+    const arrayComponents = users.map((u) => (
         <User key={u.id} user={u} />
     ))
-    console.log(arrayComponets)
     return (
         <>
-            {/* {users.map((u) => (
-                <User key={u.id} user={u} />
-            ))} */}
-            <SliderComponet arrayComponents={arrayComponets} />
+            <SliderComponet arrayComponents={arrayComponents} />
         </>
     )
 }
