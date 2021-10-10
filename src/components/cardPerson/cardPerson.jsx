@@ -18,7 +18,7 @@ const CardPerson = ({ user, onClickFavorite }) => {
                         background: `url(${user.photo}) center center`,
                         backgroundSize: "cover",
                     }}
-                    lassName={style.image} />
+                    className={style.image} />
                     <h4 className={style.h4}>{user.age} лет</h4>
                     <p className={style.p}>{user.about}</p>
                     {user.skills.map((s, i) => <Col key={i}><ProgressBar percents={s.percent} skillName={s.title} /></Col>)}
