@@ -16,7 +16,6 @@ function App() {
         <Context.Provider value={{state, dispatch}}>
             <Layout className={style.bckg} style={{ background: "transparent" }}>
                 <div className={style.container}>
-                    <BreadcrumbsComponent />
                     <Header />
                     <div className={style.comwrap}>
                         <ProgressBar
@@ -25,6 +24,7 @@ function App() {
                             type={"bar"}
                             percents={75}
                         />
+                        <BreadcrumbsComponent />
                         <div className={style.comwrap}>
                             <Content />
                         </div>
