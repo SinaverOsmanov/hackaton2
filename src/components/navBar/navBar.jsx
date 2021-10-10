@@ -4,6 +4,7 @@ import style from "./navBar.module.css"
 import { Context } from "./../../storageAPI/favoriteContext"
 import { Badge } from "antd"
 import ButtonComponent from "../button"
+import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
 
 const NavBar = () => {
     const { state } = useContext(Context)
