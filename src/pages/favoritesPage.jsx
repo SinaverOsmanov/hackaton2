@@ -3,6 +3,7 @@ import { getUserFavoriteLocalStorage } from "../storageAPI/api"
 // import { getUserLocalStorage } from "../storageAPI/api"
 import { Row, Col } from "antd"
 import style from "./favoritesPage.module.css"
+import Breadcrumbs from "../components/breadcrumbs"
 
 export default function FavoritesPage() {
     const [users, setUsers] = useState([])
