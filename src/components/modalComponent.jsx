@@ -2,7 +2,6 @@ import { Carousel, Modal, Row, Col } from "antd"
 import React, { useState } from "react"
 import { User } from "../pages/favoritesPage"
 import style from "./cardPerson/cardPerson.module.css"
-import styles from "./modulComponent.module.css"
 
 export default function ModalComponent({ user, children }) {
     const [isModalVisible, setIsModalVisible] = useState(false)
@@ -40,7 +39,7 @@ export default function ModalComponent({ user, children }) {
                 width={870}
                 bodyStyle={{ background: "#fc0" }}
             >
-                <Row className={styles.body}>
+                <Row>
                     <Col span={8}>
                         <Row>
                             <img src={user.photo} />
