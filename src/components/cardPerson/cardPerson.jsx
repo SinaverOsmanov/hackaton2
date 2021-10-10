@@ -1,13 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import style from "./cardPerson.module.css"
-import {HeartOutlined, HeartFilled} from "@ant-design/icons"
-import {Col} from "antd"
+import { HeartOutlined, HeartFilled } from "@ant-design/icons"
+import ModalComponent from "../modalComponent"
+import { Col } from "antd"
 import ProgressBar from "../progress"
 
 const CardPerson = ({ user, onClickFavorite }) => {
-    const favorite = user.favorite ? <HeartFilled /> :  <HeartOutlined /> 
-    
+    const favorite = user.favorite ? <HeartFilled /> : <HeartOutlined />
+
     return (
         <div className={style.cards}>
             <div className={style.wrapper}>
@@ -17,10 +18,10 @@ const CardPerson = ({ user, onClickFavorite }) => {
                         background: `url(${user.photo}) center center`,
                         backgroundSize: "cover",
                     }}
-                    className={style.image}/>
+                    lassName={style.image} />
                     <h4 className={style.h4}>{user.age} лет</h4>
                     <p className={style.p}>{user.about}</p>
-                    {user.skills.map((s, i)=> <Col key={i}><ProgressBar percents={s.percent} skillName={s.title}/></Col>)}
+                    {user.skills.map((s, i) => <Col key={i}><ProgressBar percents={s.percent} skillName={s.title} /></Col>)}
                 </div>
                 <div className={style.links}>
                     <Link to={`users/${user.id}`} >
@@ -28,7 +29,7 @@ const CardPerson = ({ user, onClickFavorite }) => {
                     </Link>
                     <button className={style.btn} onClick={()=>onClickFavorite(user.id)}>{favorite}</button>
                 </div>
-                
+
             </div>
         </div>
     )
