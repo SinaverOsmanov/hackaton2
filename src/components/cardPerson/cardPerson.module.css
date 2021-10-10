@@ -1,12 +1,13 @@
 .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 15px;
-    width: 22%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
+  width: 22%;
+  height: auto;
 }
 
 .wrapper {
@@ -77,14 +78,14 @@ a:hover {
 }
 
 .h3 {
-    margin-bottom: 10px;
-    width: 250px;
+  margin-bottom: 10px;
+  width: 250px;
 }
 
 .h4 {
-    margin-bottom: 1px;
+  margin-bottom: 1px;
 }
 
 .p {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
