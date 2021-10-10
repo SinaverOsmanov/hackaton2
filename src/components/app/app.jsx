@@ -6,6 +6,7 @@ import style from "./app.module.css"
 import BreadcrumbsComponent from "../breadcrumbs"
 import { Context } from "./../../storageAPI/favoriteContext"
 import { favoriteReducer } from "../../reducers/favoriteReducer"
+import ProgressBar from "./../progress"
 
 function App() {
 
