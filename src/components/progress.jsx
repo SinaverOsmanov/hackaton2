@@ -1,5 +1,6 @@
 import React from "react"
 import { Progress } from "antd"
+import {logDOM} from "@testing-library/react"
 
 const ProgressBar = ({ skillName, type, color, percents }) => {
     return (
