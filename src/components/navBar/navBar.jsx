@@ -4,6 +4,7 @@ import style from "./navBar.module.css"
 import { Context } from "./../../storageAPI/favoriteContext"
 import { Badge } from "antd"
 import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
+import ButtonComponent from "../button"
 
 const NavBar = () => {
     const { state } = useContext(Context)
@@ -13,7 +14,12 @@ const NavBar = () => {
             <div className={style.wrapper}>
                 <li className={style.item}>
                     <Link to="/">
-                        <button className={`${style.btn} btn`}>Главная</button>
+                        {
+                            <ButtonComponent
+                                setting={style.btn}
+                                btnName="Главная"
+                            />
+                        }
                     </Link>
                 </li>
                 <li className={style.item}>

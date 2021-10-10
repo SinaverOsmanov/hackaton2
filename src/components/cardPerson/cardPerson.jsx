@@ -4,6 +4,7 @@ import style from "./cardPerson.module.css"
 import { HeartOutlined, HeartFilled } from "@ant-design/icons"
 import { Col } from "antd"
 import ProgressBar from "../progress"
+import ButtonComponent from "../button"
 
 const CardPerson = ({ user, onClickFavorite }) => {
     const favorite = user.favorite ? <HeartFilled /> : <HeartOutlined />
@@ -32,15 +33,14 @@ const CardPerson = ({ user, onClickFavorite }) => {
                     ))}
                 </div>
                 <div className={style.links}>
-                    <Link to={`users/${user.id}`}>
-                        <button className={style.btn}>Открыть</button>
+                    <Link to={`users/${user.id}`} className={style.btn}>
+                        Открыть
                     </Link>
-                    <button
-                        className={style.btn}
-                        onClick={() => onClickFavorite(user.id)}
-                    >
-                        {favorite}
-                    </button>
+                    <ButtonComponent
+                        setting={style.btn}
+                        btnName={favorite}
+                        clickHandler={() => onClickFavorite(user.id)}
+                    />
                 </div>
             </div>
         </div>

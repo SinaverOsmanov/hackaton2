@@ -42,17 +42,29 @@ img {
     margin: 0 5px;
     font-size: 18px;
     background-color: #f3d1a7;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     align-content: center;
     min-height: 42px;
+    border: 1px solid #000;
 }
 .btn:focus {
-    outline: none;
+    outline: none !important;
+    background-color: #f3d1a7;
+    border: 1px solid #000;
+    color: #000;
 }
 .btn:hover {
     background-color: #86f06fb0;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn:active {
+    background-color: #86f06fb0;
+    border: 1px solid #000;
+    color: #000;
 }
 
 a {
