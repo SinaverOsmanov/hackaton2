@@ -1,6 +1,5 @@
 import { Carousel, Modal, Row, Col } from "antd"
 import React, { useState } from "react"
-import { User } from "../pages/favoritesPage"
 import style from "./cardPerson/cardPerson.module.css"
 
 export default function ModalComponent({ user, children }) {
