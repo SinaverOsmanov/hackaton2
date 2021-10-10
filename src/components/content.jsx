@@ -2,11 +2,11 @@ import React from "react"
 import Routers from "./routers"
 // import Content  from "antd"
 
-const Content = ({ callback }) => {
+const Content = () => {
     return (
         // <ContentContainer style={{ padding: "0 50px" }}>
         <>
-            <Routers callback={callback} />
+            <Routers />
             
         </>
         // </ContentContainer>
