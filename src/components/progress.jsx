@@ -4,11 +4,10 @@ import { changeColor } from "./utils/changeColor"
 import { ProgressBarPropsType } from "./utils/types"
 
 const ProgressBar = ({ skillName, type, color, percents }) => {
-
     return (
         <>
             <div style={{ textAlign: "left" }}>
-                <p>{skillName}</p>
+                <p style={{ margin: "5px 0 0" }}>{skillName}</p>
                 {type === "circle" ? (
                     <Progress
                         type={type}
