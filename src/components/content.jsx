@@ -4,12 +4,9 @@ import Routers from "./routers"
 
 const Content = () => {
     return (
-        // <ContentContainer style={{ padding: "0 50px" }}>
         <>
             <Routers />
-            
         </>
-        // </ContentContainer>
     )
 }
 

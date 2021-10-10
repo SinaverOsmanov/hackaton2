@@ -4,6 +4,8 @@ import ProgressBar from "./progress"
 import favStyle from "../pages/favoritesPage.module.css"
 import userStyle from "../pages/user.module.css"
 import BadgeComponent from "./badge"
+import { randomColorRGB } from "./utils/rgbColor"
+
 
 export function User({ user, text }) {
     let style = text === "favStyle" ? favStyle : userStyle
@@ -34,7 +36,7 @@ export function User({ user, text }) {
                             key={i}
                             style={{ marginRight: "5px" }}
                         >
-                            <BadgeComponent title={s} color={"red"} />
+                            <BadgeComponent title={s} color={randomColorRGB()} />
                         </span>
                     ))}
                     <p className={style.skills}>

@@ -43,7 +43,7 @@ export const newUsers = [{
 ]
 
 export function setUsersLocalStorage(users) {
-    localStorage.setItem("users", JSON.stringify(users ?? users))
+    localStorage.setItem("users", JSON.stringify(users))
 }
 
 export function getUsersLocalStorage() {
@@ -58,7 +58,7 @@ export function getUsersLocalStorage() {
 export function getUserByIdLocalStorage(userId) {
     let users = localStorage.getItem("users")
     users = JSON.parse(users)
-    if(users.length > 0) {
+    if(users) {
         return users.find(u=> u.id === Number(userId))
     }
 }
@@ -66,7 +66,7 @@ export function getUserByIdLocalStorage(userId) {
 export function getUserFavoriteLocalStorage() {
     let users = localStorage.getItem("users")
     users = JSON.parse(users)
-    if(users.length > 0) {
+    if(users) {
         return users.filter(u=> u.favorite === true)
     }
 }

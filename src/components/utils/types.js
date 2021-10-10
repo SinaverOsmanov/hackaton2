@@ -9,14 +9,18 @@ export const ProgressBarPropsType = {
 export const BadgePropsType = {
     title:PropTypes.string.isRequired,
     color:PropTypes.string.isRequired,
-    id:PropTypes.string.isRequired,
 }
 
 export const ButtonPropsType = {
-    color:PropTypes.string.isRequired, 
+    color:PropTypes.string, 
     clickHandler:PropTypes.func, 
     btnName: PropTypes.string.isRequired, 
-    shape:PropTypes.string.isRequired, 
-    size:PropTypes.string.isRequired, 
-    type: PropTypes.string.isRequired
+    shape:PropTypes.string, 
+    size:PropTypes.string, 
+    type: PropTypes.string
+}
+
+
+export const SliderPropsType = {
+    arrayComponents:PropTypes.array
 }

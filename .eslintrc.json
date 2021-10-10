@@ -1,35 +1,35 @@
 {
-    "parser": "babel-eslint",
-    "env": {
-        "browser": true,
-        "es6": true
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": ["react"],
-    "rules": {
-        "semi": ["error", "never"],
-        "indent": "off",
-        "linebreak-style": "off",
-        "arrow-parens": "off",
-        "require-jsdoc": "off",
-        "operator-linebreak": "off",
-        "quotes": [
-            "error",
-            "double",
-            {
-                "avoidEscape": true
-            }
-        ],
-        "space-before-function-paren": ["error", "never"],
-        "prefer-const": ["off"],
-        "react/prop-types": [0],
-        "no-unused-vars": "warn"
-    }
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "semi": ["error", "never"],
+    "indent": ["error", 4],
+    "linebreak-style": "off",
+    "arrow-parens": "off",
+    "require-jsdoc": "off",
+    "operator-linebreak": "off",
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "space-before-function-paren": ["error", "never"],
+    "prefer-const": ["off"],
+    "react/prop-types": [0],
+    "no-unused-vars": "warn"
+  }
 }
