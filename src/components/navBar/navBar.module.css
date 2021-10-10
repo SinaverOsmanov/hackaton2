@@ -23,14 +23,22 @@
     background-color: #ffc107ab;
     border: 2px solid #8a3d0a;
     margin-bottom: 20px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    color: #000;
 }
 
 .btn:focus {
     box-shadow: 0 0 0 2px rgb(181 59 59 / 55%) !important;
+    border-color: #8a3d0a;
     outline: none !important;
+    color: inherit;
+    background-color: #ffc107ab;
 }
 
 .btn:hover {
     color: #fff;
     background-color: #ca3030;
+    border-color: transparent !important;
 }

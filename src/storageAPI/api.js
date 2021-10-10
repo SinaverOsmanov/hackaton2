@@ -1,44 +1,44 @@
     
 export const newUsers = [{
     id: 1,
-    name: "Denis Random",
-    age: 30,
+    name: "Денис Бугреев",
+    age: 28,
     about: "teamlead",
     photo: "https://sun9-88.userapi.com/impf/ez9T7o5K2HteeSsuNbhxF0RUUURa8AQc7paXvg/5swS7OTw0ZQ.jpg?size=1440x1920&quality=96&sign=8a3f65ca8a7a9cf5a7feb6c7816b2507&type=album",
     social: ["www.onlyfans.com", "www.badoo.com", "www.instagram.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 80}, {title:"CSS", percent: 80}, {title:"React", percent: 65}, {title: "TypeScript", percent: 50}]
 }, {
     id: 2,
-    name: "Alesya Random",
+    name: "Алеся",
     age: 25,
     about: "play LOL",
     photo: "https://sun9-72.userapi.com/impg/pj40oJM5_ELN6oJgjMY2Oe4_OoJPdGEBJokFKA/rqhaZRsEkZg.jpg?size=550x680&quality=96&sign=6258684ff848711272c78c9c4b91f250&type=album",
     social: ["www.vk.com"],
     whatDoing: ["drink of tea"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 100}, {title:"CSS", percent: 100}, {title:"React", percent: 50}, {title: "Redux", percent: 20}]
 }, {
     id: 3,
-    name: "Evgeniy Random",
-    age: 40,
+    name: "Евгений Шут",
+    age: 38,
     about: "Father",
-    photo: "https://scontent.fmsq3-1.fna.5-9/87018358_107052504221925_2371647066444136448_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGzWpWOlZd7f0s3N3dJthtfJURHAJQnmMglREcAlCeYyPt_qLn0xxs7gH1FATayt1esxsM5mc5w99CLnaDbLBY_&_nc_ohc=icS2v4dD8bwAX8oYS2v&tn=M9By-q9mRe_Mck41&_nc_ht=scontent.fmsq3-1.fna&oh=2922be933472a67f65c750b940826395&oe=6185F5C8",
+    photo: "https://lh3.googleusercontent.com/c0JjjUmZoxqxSIoRYQ2KtSg-Vzn0hu8JKeBO_fShfU-jaa2_rxDr1VFt0JSwAFgEt5tAXut69eznj90p43NJPNpIa0uDaGuEgTzoo9ruYuvpupHy3UWnIFF10UfpPP6NneRgkdw_3jBCzZ9Dvie63AsEXJeG7ZOesWfeJXv9MbFHY99VFwovxFkng-FiylYLp-CL-0l4aRYCBpsU9q6KOd0rylIMTv1c0EoJuwhgmq5PM5CQCjh8l1KqxWmsQQcz2W93m4gUBll7H39mkO8AZmvp2sYUeyfDkBLiT4Ixh44DOdQLUKvKYqtT_obweFB28kfIwxpSqcw066k9uYaFVAMGWOmLQqnl0lawV16ZpKxiBUtWb9RKXoJ__QlRATbwhHxkIBHB6aPi3VMKDT9bZfqf2SJCAAilI_LYeC4oQGZcNEyfaQfaXKaX42Nd-ARAfOoSSm5ZnZmNPAHbCgPL3VtmrPwz6KXd6kaZg2XY7tzR83HPbxTjYzS5xCICBphIiwK6U1nmR1cWKs_NrlOkRBNmJ3uVDoMcGU0nbZWFu9P8-b_MMkdfMXMTXmNq_gIbRkCQfX8bI4FfRTOpik5VpidojF4yWZMu6IGAPWkvyqTbr2716ddx1GFL4qpZZDgsoMm9ZAg2VtldkM3tSTbrrx8NIXfwgOmGDzB_eRuHGqXL_Ss1rfM49xL0ElVyaqv6eMf4F76yILZvVDJ2HPBZf5Aa=w727-h969-no?authuser=0",
     social: ["www.vk.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 75}, {title:"CSS", percent: 85}, {title:"React", percent: 60}, {title: "TypeScript", percent: 50}]
 }, {
     id: 4,
-    name: "Sinaver Random",
-    age: 25,
+    name: "Синавер Османов",
+    age: 29,
     about: "tech lead",
-    photo: "https://sun9-88.userapi.com/impf/ez9T7o5K2HteeSsuNbhxF0RUUURa8AQc7paXvg/5swS7OTw0ZQ.jpg?size=1440x1920&quality=96&sign=8a3f65ca8a7a9cf5a7feb6c7816b2507&type=album",
+    photo: "https://sun9-11.userapi.com/impf/0qObr6dXSQdOfTQuKik6LiClD4Yc6Y1ozTUO_w/rRASMIf0x-o.jpg?size=887x1183&quality=96&sign=51e43a01ffa32ef1a4dd9c7c3d16ff08&type=album",
     social: ["www.vk.com"],
     whatDoing: ["cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 90}, {title:"CSS", percent: 90}, {title:"React", percent: 80}, {title: "TypeScript", percent: 90}]
 }
 ]
 

@@ -2,9 +2,24 @@ import React from "react"
 import { Button } from "antd"
 import { ButtonPropsType } from "./utils/types"
 
-const ButtonComponent = ({ color, clickHandler, btnName, shape, size, type }) => {
+const ButtonComponent = ({
+    style,
+    clickHandler,
+    btnName,
+    shape,
+    size,
+    type,
+    setting,
+}) => {
     return (
-        <Button type={type} shape={shape} style={{ background: color }} size={size} onClick={clickHandler}>
+        <Button
+            type={type}
+            shape={shape}
+            style={style}
+            size={size}
+            onClick={clickHandler}
+            className={setting}
+        >
             {btnName}
         </Button>
     )

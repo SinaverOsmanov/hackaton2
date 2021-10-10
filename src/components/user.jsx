@@ -6,6 +6,7 @@ import userStyle from "../pages/user.module.css"
 import BadgeComponent from "./badge"
 import { randomColorRGB } from "./utils/rgbColor"
 
+
 export function User({ user, text }) {
     let style = text === "favStyle" ? favStyle : userStyle
     return (
