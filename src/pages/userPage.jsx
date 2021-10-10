@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import { User } from "../components/user"
+import { User } from "../components/user/user"
 import { getUserByIdLocalStorage } from "../storageAPI/api"
 
 const UserPage = () => {
@@ -14,9 +14,7 @@ const UserPage = () => {
 
     if (!user) return "loading"
 
-    return (
-        <User user={user} />
-    )
+    return <User user={user} text={"userStyle"} />
 }
 
 export default UserPage

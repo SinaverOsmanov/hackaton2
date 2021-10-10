@@ -8,10 +8,10 @@ export const newUsers = [{
     social: ["www.onlyfans.com", "www.badoo.com", "www.instagram.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 80}, {title:"CSS", percent: 80}, {title:"React", percent: 65}, {title: "TypeScript", percent: 50}]
+    skills: [{title:"HTML", percent: 80}, {title:"CSS", percent: 80}, {title:"React", percent: 70}, {title: "TypeScript", percent: 60}]
 }, {
     id: 2,
-    name: "Алеся",
+    name: "Алеся Мезина",
     age: 25,
     about: "play LOL",
     photo: "https://sun9-72.userapi.com/impg/pj40oJM5_ELN6oJgjMY2Oe4_OoJPdGEBJokFKA/rqhaZRsEkZg.jpg?size=550x680&quality=96&sign=6258684ff848711272c78c9c4b91f250&type=album",
