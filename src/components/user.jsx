@@ -1,8 +1,8 @@
 import { Col, Row } from "antd"
 import React from "react"
 import ProgressBar from "./progress"
-import favStyle from "../pages/favoritesPage.module.css"
-import userStyle from "../pages/user.module.css"
+import favStyle from "../pages/favoritesPage/favoritesPage.module.css"
+import userStyle from "../pages/userPage/user.module.css"
 import BadgeComponent from "./badge"
 import { randomColorRGB } from "./utils/rgbColor"
 

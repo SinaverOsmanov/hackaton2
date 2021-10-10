@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { getUserFavoriteLocalStorage } from "../storageAPI/api"
-import { User } from "../components/user"
-import SliderComponet from "../components/customSlider/slider"
+import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
+import { User } from "../../components/user"
+import SliderComponent from "../../components/customSlider/slider"
 
 export default function FavoritesPage() {
     const [users, setUsers] = useState([])
@@ -18,7 +18,7 @@ export default function FavoritesPage() {
     ))
     return (
         <>
-            <SliderComponet arrayComponents={arrayComponents} />
+            <SliderComponent arrayComponents={arrayComponents} />
         </>
     )
 }

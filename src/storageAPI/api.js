@@ -8,7 +8,7 @@ export const newUsers = [{
     social: ["www.onlyfans.com", "www.badoo.com", "www.instagram.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 80}, {title:"CSS", percent: 80}, {title:"React", percent: 65}, {title: "TypeScript", percent: 50}]
+    skills: [{title:"HTML", percent: 80}, {title:"CSS", percent: 80}, {title:"React", percent: 70}, {title: "TypeScript", percent: 60}]
 }, {
     id: 2,
     name: "Алеся",
