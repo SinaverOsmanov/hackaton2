@@ -1,32 +1,36 @@
-import React, { useState } from "react"
+import React, { useContext, useReducer, useState } from "react"
 import Header from "../header"
 import Content from "../content"
 import ProgressBar from "../progress"
-import {Badge, Layout, Progress} from "antd"
+import { Layout } from "antd"
 import style from "./app.module.css"
 import BreadcrumbsComponent from "../breadcrumbs"
+import { Context } from "./../../storageAPI/favoriteContext"
+import { favoriteReducer } from "../../reducers/favoriteReducer"
 
 function App() {
-    const [state, setState] = useState(0)
-    function callback() {
-        setState(state + 1)
-    }
+
+    const [state, dispatch] = useReducer(favoriteReducer)
+
     return (
-        <Layout className={style.bckg} style={{ backgroundSize: "cover" }}>
-            <div className={style.container}>
-                <BreadcrumbsComponent />
-                <Header />
-                <div className={style.comwrap}>
-                    <ProgressBar
-                        skillName={"ivan"}
-                        color={"blue"}
-                        type={"bar"}
-                        percents={75}
-                    />
-                    <Content callback={callback} />
+        <Context.Provider value={{state, dispatch}}>
+
+            <Layout className={style.bckg} style={{ backgroundSize: "cover" }}>
+                <div className={style.container}>
+                    <BreadcrumbsComponent />
+                    <Header />
+                    <div className={style.comwrap}>
+                        <ProgressBar
+                            skillName={"ivan"}
+                            color={"blue"}
+                            type={"bar"}
+                            percents={75}
+                        />
+                        <Content/>
+                    </div>
                 </div>
-            </div>
-        </Layout>
+            </Layout>
+        </Context.Provider>
     )
 }
 

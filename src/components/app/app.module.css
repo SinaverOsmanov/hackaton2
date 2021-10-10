@@ -1,14 +1,16 @@
 .bckg {
-    background: url("https://img5.goodfon.ru/original/2112x1189/3/74/abstract-background-gradient-design-geometriia-abstraktsiia.jpg")
-        no-repeat center center;
+  background: url("https://img5.goodfon.ru/original/2112x1189/3/74/abstract-background-gradient-design-geometriia-abstraktsiia.jpg")
+    no-repeat center center;
 }
 
 .container {
-    padding: 0 5px;
+  padding: 0 5px;
+  height: 100%;
+  max-height: fit-content;
 }
 
 .comwrap {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 5px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
 }
