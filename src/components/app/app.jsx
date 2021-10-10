@@ -17,12 +17,6 @@ function App() {
                 <BreadcrumbsComponent />
                 <Header />
                 <div className={style.comwrap}>
-                    <ProgressBar
-                        skillName={"ivan"}
-                        color={"blue"}
-                        type={"bar"}
-                        percents={75}
-                    />
                     <Content callback={callback} />
                 </div>
                 <ProgressBar
