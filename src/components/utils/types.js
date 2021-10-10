@@ -20,7 +20,16 @@ export const ButtonPropsType = {
     type: PropTypes.string
 }
 
-
 export const SliderPropsType = {
     arrayComponents:PropTypes.array
+}
+
+export const CardPersonType = {
+    user: PropTypes.object,
+    onClickFavorite: PropTypes.func
+}
+
+export const UserType = {
+    user: PropTypes.object,
+    text: PropTypes.string
 }

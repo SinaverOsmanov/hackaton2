@@ -5,6 +5,7 @@ import favStyle from "../../pages/favoritesPage/favoritesPage.module.css"
 import userStyle from "./user.module.css"
 import BadgeComponent from "../badge"
 import { randomColorRGB } from "../utils/rgbColor"
+import {UserType} from "../utils/types"
 
 export function User({ user, text }) {
     let style = text === "favStyle" ? favStyle : userStyle
@@ -68,3 +69,5 @@ export function User({ user, text }) {
         </div>
     )
 }
+
+User.propTypes = UserType
