@@ -8,6 +8,7 @@ import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
 const NavBar = () => {
     const { state } = useContext(Context)
     const favoriteUsers = getUserFavoriteLocalStorage().length
+
     return (
         <div className={style.menu}>
             <div className={style.wrapper}>
