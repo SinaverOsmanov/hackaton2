@@ -11,10 +11,10 @@ export const changeColor = (name) => {
         colorBar = "#1890ff"
         break
     case "TypeScript":
-        colorBar = "#b1ea6f"
+        colorBar = "#0da211"
         break
     case "Redux":
-        colorBar = "#b1ea6f"
+        colorBar = "#0da211"
         break
     default:
         break
