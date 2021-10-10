@@ -8,7 +8,7 @@ import ErrorPage from "../pages/errorPage"
 const Routers = () => {
     return (
         <Switch>
-            <Route path="/" render={()=><HomePage />} exact/>
+            <Route path="/" component={HomePage} exact/>
             <Route path="/users/:userId" component={UserPage}/>
             <Route path="/favorites" component={FavoritesPage}/>
             <Route path="/error" component={ErrorPage}/>
