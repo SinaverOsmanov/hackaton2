@@ -24,15 +24,10 @@ const CardPerson = ({ user, onClickFavorite }) => {
                     {user.skills.map((s, i) => <Col key={i}><ProgressBar percents={s.percent} skillName={s.title} /></Col>)}
                 </div>
                 <div className={style.links}>
-                    {/* <Link to={`users/${user.id}`}> */}
-                    <ModalComponent user={user}>
-                        <button style={{
-                            border: "0", background: "none",
-                            fontSize: "20px"
-                        }} onClick={() => onClickFavorite(user.id)}>{favorite}</button>
-                    </ModalComponent>
-                    {/* </Link> */}
-                    <button className={style.btn} onClick={() => onClickFavorite(user.id)}>{favorite}</button>
+                    <Link to={`users/${user.id}`} >
+                        <button className={style.btn}>Открыть</button>
+                    </Link>
+                    <button className={style.btn} onClick={()=>onClickFavorite(user.id)}>{favorite}</button>
                 </div>
 
             </div>
