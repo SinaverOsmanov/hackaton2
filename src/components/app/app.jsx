@@ -13,10 +13,14 @@ function App() {
     return (
         <Context.Provider value={{ state, dispatch }}>
             <Layout style={{ background: "transparent" }}>
-                <BreadcrumbsComponent />
-                <Header />
-                <div className={style.comwrap}>
-                    <Content />
+                <div className={style.container}>
+                    <Header />
+                    <div className={style.comwrap}>
+                        <BreadcrumbsComponent />
+                        <div className={style.comwrap}>
+                            <Content />
+                        </div>
+                    </div>
                 </div>
             </Layout>
         </Context.Provider>

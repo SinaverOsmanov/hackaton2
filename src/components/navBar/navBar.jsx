@@ -3,10 +3,11 @@ import { Link } from "react-router-dom"
 import style from "./navBar.module.css"
 import { Context } from "./../../storageAPI/favoriteContext"
 import { Badge } from "antd"
+import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
 
 const NavBar = () => {
     const {state} = useContext(Context)
-    
+    const favoriteUsers = getUserFavoriteLocalStorage().length
     return (
         <div className={style.menu}>
             <div className={style.wrapper}>
@@ -16,11 +17,9 @@ const NavBar = () => {
                     </Link>
                 </li>
                 <li className={style.item}>
-                    <Link to="/favorites" style={{position: "relative"}}>
-                        <button className={`${style.btn} btn`}>
+                    <Link to="/favorites" style={{position: "relative"}} className={`${style.btn} btn`} >
                             Избранное
-                        </button>
-                        <Badge count={state && state.favoriteCount} offset={[-15, -40]} style={{position:"absolute", right: "-6px", top: 1}}/>
+                        <Badge count={favoriteUsers || state && state.favoriteCount} offset={[-15, -40]} style={{position:"absolute", right: "-22px", top: 8}}/>
                     </Link>
                 </li>
             </div>
