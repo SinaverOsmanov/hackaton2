@@ -3,12 +3,9 @@ import { Link } from "react-router-dom"
 import style from "./navBar.module.css"
 import { Context } from "./../../storageAPI/favoriteContext"
 import { Badge } from "antd"
-import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
 
 const NavBar = () => {
     const { state } = useContext(Context)
-    const favoriteUsers = getUserFavoriteLocalStorage().length
-
     return (
         <div className={style.menu}>
             <div className={style.wrapper}>
@@ -25,9 +22,7 @@ const NavBar = () => {
                     >
                         Избранное
                         <Badge
-                            count={
-                                favoriteUsers || (state && state.favoriteCount)
-                            }
+                            count={state && state.favoriteCount}
                             offset={[-15, -40]}
                             style={{
                                 position: "absolute",
