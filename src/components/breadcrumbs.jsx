@@ -5,7 +5,8 @@ import { Breadcrumb } from "antd"
 const BreadcrumbsComponent = () => {
     const { pathname } = useLocation()
     if (pathname === "/") return null
-    const title2 = pathname.split("/").filter(e => e !== "")
+    let title2 = pathname.split("/").filter(e => e !== "")
+    title2 = title2.filter(e => e !== "users")
     return (
         <Breadcrumb>
             <Breadcrumb.Item ><Link to="/">Main</Link></Breadcrumb.Item>
