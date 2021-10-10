@@ -15,7 +15,7 @@ function SliderComponet({ arrayComponents = [1, 2, 3, 4, 5] }) {
         <>
             <Carousel autoplay>
                 {arrayComponents.map(component => (<div style={contentStyle} key={component}>{component}</div>))}
-            </Carousel>,
+            </Carousel>
         </>
     )
 }
