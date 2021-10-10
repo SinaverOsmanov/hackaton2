@@ -8,7 +8,7 @@ export const newUsers = [{
     social: ["www.onlyfans.com", "www.badoo.com", "www.instagram.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
+    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
 }, {
     id: 2,
     name: "Alesya Random",
@@ -18,17 +18,17 @@ export const newUsers = [{
     social: ["www.vk.com"],
     whatDoing: ["drink of tea"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
+    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
 }, {
     id: 3,
     name: "Evgeniy Random",
     age: 40,
     about: "Father",
-    photo: "https://scontent.fmsq3-1.fna.fbcdn.net/v/t1.6435-9/87018358_107052504221925_2371647066444136448_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGzWpWOlZd7f0s3N3dJthtfJURHAJQnmMglREcAlCeYyPt_qLn0xxs7gH1FATayt1esxsM5mc5w99CLnaDbLBY_&_nc_ohc=icS2v4dD8bwAX8oYS2v&tn=M9By-q9mRe_Mck41&_nc_ht=scontent.fmsq3-1.fna&oh=2922be933472a67f65c750b940826395&oe=6185F5C8",
+    photo: "https://scontent.fmsq3-1.fna.5-9/87018358_107052504221925_2371647066444136448_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGzWpWOlZd7f0s3N3dJthtfJURHAJQnmMglREcAlCeYyPt_qLn0xxs7gH1FATayt1esxsM5mc5w99CLnaDbLBY_&_nc_ohc=icS2v4dD8bwAX8oYS2v&tn=M9By-q9mRe_Mck41&_nc_ht=scontent.fmsq3-1.fna&oh=2922be933472a67f65c750b940826395&oe=6185F5C8",
     social: ["www.vk.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
+    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
 }, {
     id: 4,
     name: "Sinaver Random",
@@ -38,7 +38,7 @@ export const newUsers = [{
     social: ["www.vk.com"],
     whatDoing: ["cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
+    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
 }
 ]
 
