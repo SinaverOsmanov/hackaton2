@@ -34,7 +34,15 @@ export function User({ user }) {
                         <b>Хард скилы:</b>
                     </p>
                     <Row>
-                        {user.skills.map((s, i)=> <Col key={i} span={6}><ProgressBar percents={s.percent} skillName={s.title} type='circle'/></Col>)}
+                        {user.skills.map((s, i) => (
+                            <Col key={i} span={8}>
+                                <ProgressBar
+                                    percents={s.percent}
+                                    skillName={s.title}
+                                    type="circle"
+                                />
+                            </Col>
+                        ))}
                     </Row>
                 </div>
             </div>

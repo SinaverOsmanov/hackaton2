@@ -1,23 +1,21 @@
-
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router"
 import { User } from "../components/user"
 import { getUserByIdLocalStorage } from "../storageAPI/api"
 
-
 const UserPage = () => {
-    const {userId} = useParams()
+    const { userId } = useParams()
 
     const [user, setUser] = useState()
-    useEffect(()=>{
+    useEffect(() => {
         const userData = getUserByIdLocalStorage(userId)
-        if(userData) setUser(userData)
+        if (userData) setUser(userData)
     }, [userId])
 
-    if(!user) return "loading"
+    if (!user) return "loading"
 
     return (
-        <User user={user}/>
+        <User user={user} />
         // <Row>
         //     <Col offset={1} span={6}>
         //         <Row><img src={user.photo}/></Row>
