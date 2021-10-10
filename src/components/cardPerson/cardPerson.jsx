@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import style from "./cardPerson.module.css"
+import {HeartOutlined, HeartFilled} from "@ant-design/icons"
+import ModalComponent from "../modalComponent"
 
 const CardPerson = ({ user, onClickFavorite }) => {
-    const favorite = user.favorite ? "Из избранного" : "В избранное"
+    const favorite = user.favorite ? <HeartFilled /> :  <HeartOutlined /> 
     
     return (
         <div className={style.cards}>
@@ -19,11 +21,15 @@ const CardPerson = ({ user, onClickFavorite }) => {
                     <p className={style.p}>{user.about}</p>
                 </div>
                 <div className={style.links}>
-                    <Link to={`users/${user.id}`}>
-                        <button className={style.btn}>Открыть</button>
-                    </Link>
+                    {/* <Link to={`users/${user.id}`}> */}
+                    <ModalComponent user={user}>
+                        <button style={{border: "0", background:"none", 
+                            fontSize: "20px"}} onClick={()=>onClickFavorite(user.id)}>{favorite}</button>
+                    </ModalComponent>
+                    {/* </Link> */}
                     <button className={style.btn} onClick={()=>onClickFavorite(user.id)}>{favorite}</button>
                 </div>
+                
             </div>
         </div>
     )

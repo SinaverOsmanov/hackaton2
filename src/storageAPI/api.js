@@ -1,5 +1,5 @@
     
-const newUsers = [{
+export const newUsers = [{
     id: 1,
     name: "Denis Random",
     age: 30,
@@ -18,7 +18,7 @@ const newUsers = [{
     social: ["www.vk.com"],
     whatDoing: ["drink of tea"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 20}, {title:"CSS", percent: 50}, {title:"React", percent: 70}]
 }, {
     id: 3,
     name: "Evgeniy Random",
@@ -42,12 +42,16 @@ const newUsers = [{
 }
 ]
 
-export function setUsersLocalStorage(users=newUsers) {
-    localStorage.clear()
-    localStorage.setItem("users", JSON.stringify(users === "undefined" ? newUsers : users))
+export function setUsersLocalStorage(users) {
+    localStorage.setItem("users", JSON.stringify(users ?? users))
 }
+
 export function getUsersLocalStorage() {
     const users = localStorage.getItem("users")
+    if(!users) {
+        setUsersLocalStorage(newUsers)
+        return newUsers
+    }
     return JSON.parse(users)
 }
 
@@ -56,5 +60,13 @@ export function getUserByIdLocalStorage(userId) {
     users = JSON.parse(users)
     if(users.length > 0) {
         return users.find(u=> u.id === Number(userId))
+    }
+}
+
+export function getUserFavoriteLocalStorage() {
+    let users = localStorage.getItem("users")
+    users = JSON.parse(users)
+    if(users.length > 0) {
+        return users.filter(u=> u.favorite === true)
     }
 }

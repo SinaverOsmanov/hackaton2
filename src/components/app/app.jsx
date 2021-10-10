@@ -1,16 +1,15 @@
-import React, { useEffect } from "react"
+import React, { useState } from "react"
 import Header from "../header"
 import Content from "../content"
-import { setUsersLocalStorage } from "../../storageAPI/api"
 import ProgressBar from "../progress"
 import { Layout } from "antd"
 import style from "./app.module.css"
 
 function App() {
-    useEffect(() => {
-        setUsersLocalStorage()
-    }, [])
-
+    const [state, setState] = useState(0)
+    function callback(){
+        setState(state+1)
+    }
     return (
         <Layout className={style.bckg}>
             <div className={style.container}>
@@ -21,7 +20,7 @@ function App() {
                     type={"bar"}
                     percents={75}
                 />
-                <Content />
+                <Content callback={callback}/>
             </div>
         </Layout>
     )
