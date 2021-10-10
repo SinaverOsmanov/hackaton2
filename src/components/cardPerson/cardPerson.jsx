@@ -5,6 +5,7 @@ import { HeartOutlined, HeartFilled } from "@ant-design/icons"
 import { Col } from "antd"
 import ProgressBar from "../progress"
 import ButtonComponent from "../button"
+import {CardPersonType} from "../utils/types"
 
 const CardPerson = ({ user, onClickFavorite }) => {
     const favorite = user.favorite ? <HeartFilled /> : <HeartOutlined />
@@ -46,4 +47,5 @@ const CardPerson = ({ user, onClickFavorite }) => {
         </div>
     )
 }
+CardPerson.propTypes = CardPersonType
 export default CardPerson

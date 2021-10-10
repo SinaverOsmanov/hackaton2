@@ -1,5 +1,6 @@
 .menu {
-    padding: 30px 0 15px;
+    padding: 5px 0;
+    background-image: linear-gradient(188deg, #0cfff5c4 0%, #ef010196 100%);
 }
 
 .wrapper {
@@ -20,7 +21,7 @@
 }
 
 .btn {
-    background-color: #ffc107ab;
+    background-color: #df9694ab;
     border: 2px solid #8a3d0a;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -34,11 +35,11 @@
     border-color: #8a3d0a;
     outline: none !important;
     color: inherit;
-    background-color: #ffc107ab;
+    background-color: #f6ebebb8;
 }
 
 .btn:hover {
-    color: #fff;
-    background-color: #ca3030;
-    border-color: transparent !important;
+    color: #000;
+    background-color: #f6ebebb8;
+    border-color: #8a3d0a !important;
 }
