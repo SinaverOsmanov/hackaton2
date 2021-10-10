@@ -21,7 +21,7 @@ const CardPerson = ({ user, onClickFavorite }) => {
                     className={style.image}/>
                     <h4 className={style.h4}>{user.age} лет</h4>
                     <p className={style.p}>{user.about}</p>
-                    {user.skills.map((s, i)=> <Col key={i}><ProgressBar percents={s.percent} skillName={s.title}/></Col>)}
+                    {user.skills.map((s, i)=> <Col key={i}><ProgressBar percents={s.percent} skillName={s.title} color={s.color}/></Col>)}
                 </div>
                 <div className={style.links}>
                     {/* <Link to={`users/${user.id}`}> */}

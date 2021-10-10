@@ -28,7 +28,7 @@ export const newUsers = [{
     social: ["www.vk.com"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,
-    skills: [{title:"HTML", percent: 30}, {title:"CSS", percent: 30}, {title:"React", percent: 30}]
+    skills: [{title:"HTML", percent: 30, color: "#fa541c"}, {title:"CSS", percent: 30, color: "#531dab"}, {title:"React", percent: 30, color: "#fff566"}]
 }, {
     id: 4,
     name: "Sinaver Random",
