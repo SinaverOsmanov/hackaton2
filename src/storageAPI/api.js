@@ -35,7 +35,7 @@ export const newUsers = [{
     age: 29,
     about: "Techlead",
     photo: "https://sun9-11.userapi.com/impf/0qObr6dXSQdOfTQuKik6LiClD4Yc6Y1ozTUO_w/rRASMIf0x-o.jpg?size=887x1183&quality=96&sign=51e43a01ffa32ef1a4dd9c7c3d16ff08&type=album",
-    social: ["https://github.com/SinaverOsmanov"],
+    social: ["https://github.com/SinaverOsmanov", "https://vk.com/hosh_keldiniz", "https://www.instagram.com/sinaver92/"],
     whatDoing: ["cleaning"],
     favorite: false,
     skills: [{title:"HTML", percent: 90}, {title:"CSS", percent: 90}, {title:"React", percent: 80}, {title: "TypeScript", percent: 90}]
