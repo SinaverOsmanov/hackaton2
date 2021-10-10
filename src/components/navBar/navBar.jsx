@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, {useEffect, useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import style from "./navBar.module.css"
 import { Context } from "./../../storageAPI/favoriteContext"
@@ -9,6 +9,13 @@ import ButtonComponent from "../button"
 
 const NavBar = () => {
     const { state } = useContext(Context)
+    const [count, setCount] = useState(0)
+
+    useEffect(() => {
+        const favoriteUsers = getUserFavoriteLocalStorage()
+        setCount(favoriteUsers.length)
+    }, [])
+    
     return (
         <div className={style.menu}>
             <div className={style.wrapper}>
@@ -30,7 +37,7 @@ const NavBar = () => {
                     >
                         Избранное
                         <Badge
-                            count={state && state.favoriteCount}
+                            count={state ? state.favoriteCount : count }
                             offset={[-15, -40]}
                             style={{
                                 position: "absolute",

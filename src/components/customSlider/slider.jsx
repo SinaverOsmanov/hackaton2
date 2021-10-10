@@ -1,6 +1,4 @@
-import { Button } from "antd"
 import React from "react"
-import ButtonComponent from "../button"
 import { SliderPropsType } from "../utils/types"
 import { Carousel } from "antd"
 
@@ -17,7 +15,7 @@ function SliderComponet({ arrayComponents = [1, 2, 3, 4, 5] }) {
         <>
             <Carousel autoplay>
                 {arrayComponents.map(component => (<div style={contentStyle} key={component}>{component}</div>))}
-            </Carousel>,
+            </Carousel>
         </>
     )
 }
