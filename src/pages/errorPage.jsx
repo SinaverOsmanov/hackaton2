@@ -1,10 +1,16 @@
+import { Col, Row } from "antd"
 import React from "react"
+import { Link } from "react-router-dom"
 
 const ErrorPage = () => {
+
     return (
-        <div>
-            TUT NICHEGO NET!
-        </div>
+        <Col>
+            <Row justify='center'>К сожалению такой страницы нет, вернитесь на главную и попробуйте ещё раз</Row>
+            <Row>
+                <Link to='/'>на главную</Link>
+            </Row>
+        </Col>
     )
 }
 
