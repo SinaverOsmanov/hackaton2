@@ -1,4 +1,4 @@
-import React, { useContext, useReducer, useState } from "react"
+import React, { useReducer } from "react"
 import Header from "../header"
 import Content from "../content"
 import { Layout } from "antd"
@@ -13,14 +13,10 @@ function App() {
     return (
         <Context.Provider value={{ state, dispatch }}>
             <Layout style={{ background: "transparent" }}>
-                <div className={style.container}>
-                    <Header />
-                    <div className={style.comwrap}>
-                        <BreadcrumbsComponent />
-                        <div className={style.comwrap}>
-                            <Content />
-                        </div>
-                    </div>
+                <Header />
+                <div className={style.comwrap}>
+                    <BreadcrumbsComponent />
+                    <Content />
                 </div>
             </Layout>
         </Context.Provider>

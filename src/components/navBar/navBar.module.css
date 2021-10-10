@@ -1,38 +1,36 @@
 .menu {
-  margin: 30px 0;
-  border-bottom: 2px solid #76360a;
+    padding: 30px 0 15px;
 }
 
 .wrapper {
-  margin-bottom: 25px;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .item {
-  list-style-type: none;
-  position: relative;
-  marker: none;
-  padding: 10px;
-  height: 60px;
+    list-style-type: none;
+    position: relative;
+    marker: none;
+    padding: 10px;
+    height: 60px;
 }
 
 .btn {
-  background-color: #ffc107ab;
-  border: 2px solid #8a3d0a;
-  margin-bottom: 20px;
+    background-color: #ffc107ab;
+    border: 2px solid #8a3d0a;
+    margin-bottom: 20px;
 }
 
 .btn:focus {
-  box-shadow: 0 0 0 2px rgb(181 59 59 / 55%) !important;
-  outline: none !important;
+    box-shadow: 0 0 0 2px rgb(181 59 59 / 55%) !important;
+    outline: none !important;
 }
 
 .btn:hover {
-  color: #fff;
-  background-color: #ca3030;
+    color: #fff;
+    background-color: #ca3030;
 }
