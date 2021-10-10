@@ -5,10 +5,10 @@ import UserPage from "../pages/userPage"
 import FavoritesPage from "../pages/favoritesPage"
 import ErrorPage from "../pages/errorPage"
 
-const Routers = ({callback}) => {
+const Routers = () => {
     return (
         <Switch>
-            <Route path="/" render={()=><HomePage callback={callback}/>} exact/>
+            <Route path="/" render={()=><HomePage />} exact/>
             <Route path="/users/:userId" component={UserPage}/>
             <Route path="/favorites" component={FavoritesPage}/>
             <Route path="/error" component={ErrorPage}/>

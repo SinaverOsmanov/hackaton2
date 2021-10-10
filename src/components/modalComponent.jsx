@@ -70,7 +70,7 @@ export default function ModalComponent({ user, children }) {
                                                             <span>
                                                                 {s.percent}
                                                             </span>
-                                                            ,{" "}
+                                                            ,
                                                         </Col>
                                                     ))}
                                                 </Row>
