@@ -1,9 +1,11 @@
 import { Col, Row } from "antd"
 import React from "react"
-import style from "../pages/favoritesPage.module.css"
 import ProgressBar from "./progress"
+import favStyle from "../pages/favoritesPage.module.css"
+import userStyle from "../pages/user.module.css"
 
-export function User({ user }) {
+export function User({ user, text }) {
+    let style = text === "favStyle" ? favStyle : userStyle
     return (
         <div className={style.main}>
             <div className={style.wrapper}>
@@ -16,25 +18,37 @@ export function User({ user }) {
                 />
                 <div className={style.text}>
                     <h3>{user.name}</h3>
-                    <p>
-                        <b>Возраст:</b> {user.age}
+                    <p className={style.p}>
+                        <b className={style.b}>Возраст:</b> {user.age} лет
                     </p>
-                    <p>
-                        <b>О себе:</b> {user.about}
+                    <p className={style.p}>
+                        <b className={style.b}>О себе:</b> {user.about}
                     </p>
-                    <p>
-                        <b>Соц.сети:</b>
+                    <p className={style.p}>
+                        <b className={style.b}>Соц.сети:</b>
                     </p>
                     {user.social.map((s, i) => (
-                        <span key={i} style={{ marginRight: "5px" }}>
+                        <span
+                            className={style.span}
+                            key={i}
+                            style={{ marginRight: "5px" }}
+                        >
                             {s}
                         </span>
                     ))}
-                    <p>
-                        <b>Хард скилы:</b>
+                    <p className={style.skills}>
+                        <b className={style.b}>Хард скилы:</b>
                     </p>
                     <Row>
-                        {user.skills.map((s, i)=> <Col key={i} span={6}><ProgressBar percents={s.percent} skillName={s.title} type='circle'/></Col>)}
+                        {user.skills.map((s, i) => (
+                            <Col key={i} span={8}>
+                                <ProgressBar
+                                    percents={s.percent}
+                                    skillName={s.title}
+                                    type="circle"
+                                />
+                            </Col>
+                        ))}
                     </Row>
                 </div>
             </div>

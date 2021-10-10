@@ -1,24 +1,10 @@
 import React from "react"
 import { Progress } from "antd"
+import { changeColor } from "./utils/changeColor"
+import { ProgressBarPropsType } from "./utils/types"
 
 const ProgressBar = ({ skillName, type, color, percents }) => {
-    const changeColor = (name) => {
-        let colorBar = ""
-        switch (name) {
-        case "HTML":
-            colorBar = "#fa541c"
-            break
-        case "CSS":
-            colorBar = "#531dab"
-            break
-        case "React":
-            colorBar = "#1890ff"
-            break
-        default:
-            break
-        }
-        return colorBar
-    }
+
     return (
         <>
             <div style={{ textAlign: "left" }}>
@@ -39,5 +25,7 @@ const ProgressBar = ({ skillName, type, color, percents }) => {
         </>
     )
 }
+
+ProgressBar.propTypes = ProgressBarPropsType
 
 export default ProgressBar

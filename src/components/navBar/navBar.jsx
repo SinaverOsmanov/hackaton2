@@ -6,7 +6,7 @@ import { Badge } from "antd"
 import { getUserFavoriteLocalStorage } from "../../storageAPI/api"
 
 const NavBar = () => {
-    const {state} = useContext(Context)
+    const { state } = useContext(Context)
     const favoriteUsers = getUserFavoriteLocalStorage().length
     return (
         <div className={style.menu}>
@@ -17,9 +17,23 @@ const NavBar = () => {
                     </Link>
                 </li>
                 <li className={style.item}>
-                    <Link to="/favorites" style={{position: "relative"}} className={`${style.btn} btn`} >
-                            Избранное
-                        <Badge count={favoriteUsers || state && state.favoriteCount} offset={[-15, -40]} style={{position:"absolute", right: "-22px", top: 8}}/>
+                    <Link
+                        to="/favorites"
+                        style={{ position: "relative" }}
+                        className={`${style.btn} btn`}
+                    >
+                        Избранное
+                        <Badge
+                            count={
+                                favoriteUsers || (state && state.favoriteCount)
+                            }
+                            offset={[-15, -40]}
+                            style={{
+                                position: "absolute",
+                                right: "-22px",
+                                top: 8,
+                            }}
+                        />
                     </Link>
                 </li>
             </div>

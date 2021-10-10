@@ -16,7 +16,7 @@ export default function FavoritesPage() {
     return (
         <>
             {users.map((u) => (
-                <User key={u.id} user={u} />
+                <User key={u.id} user={u} text={"favStyle"} />
             ))}
         </>
     )
