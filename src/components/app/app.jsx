@@ -1,7 +1,6 @@
 import React, { useContext, useReducer, useState } from "react"
 import Header from "../header"
 import Content from "../content"
-import ProgressBar from "../progress"
 import { Layout } from "antd"
 import style from "./app.module.css"
 import BreadcrumbsComponent from "../breadcrumbs"
@@ -14,8 +13,7 @@ function App() {
 
     return (
         <Context.Provider value={{state, dispatch}}>
-
-            <Layout className={style.bckg} style={{ backgroundSize: "cover" }}>
+            <Layout className={style.bckg} style={{ background: "transparent" }}>
                 <div className={style.container}>
                     <BreadcrumbsComponent />
                     <Header />
@@ -26,7 +24,9 @@ function App() {
                             type={"bar"}
                             percents={75}
                         />
-                        <Content/>
+                        <div className={style.comwrap}>
+                            <Content />
+                        </div>
                     </div>
                 </div>
             </Layout>

@@ -13,7 +13,7 @@ export default function FavoritesPage() {
     }, [])
 
     if (users.length === 0) {
-        return "loading"
+        return <h2>Нет избранных</h2>
     }
 
     return (
@@ -35,7 +35,7 @@ export function User({ user }) {
                         backgroundSize: "cover",
                     }}
                     className={style.image}
-                ></div>
+                />
 
                 <div className={style.text}>
                     <h3>{user.name}</h3>
