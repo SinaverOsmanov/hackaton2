@@ -2,7 +2,7 @@ import React from "react"
 import { SliderPropsType } from "../utils/types"
 import { Carousel } from "antd"
 
-function SliderComponent({ children =[1, 2, 3, 4, 5] }) {
+function SliderComponent({ children = [1, 2, 3, 4, 5] }) {
     const contentStyle = {
         height: "160px",
         color: "#fff",

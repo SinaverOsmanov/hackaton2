@@ -12,16 +12,16 @@ export const BadgePropsType = {
 }
 
 export const ButtonPropsType = {
-    color:PropTypes.string, 
-    clickHandler:PropTypes.func, 
+    color: PropTypes.string, 
+    clickHandler: PropTypes.func, 
     btnName: PropTypes.string.isRequired, 
-    shape:PropTypes.string, 
-    size:PropTypes.string, 
+    shape: PropTypes.string, 
+    size: PropTypes.string, 
     type: PropTypes.string
 }
 
 export const SliderPropsType = {
-    arrayComponents:PropTypes.array
+    arrayComponents: PropTypes.array
 }
 
 export const CardPersonType = {

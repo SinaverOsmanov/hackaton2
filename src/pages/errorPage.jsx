@@ -1,15 +1,17 @@
 import { Col, Row } from "antd"
 import React from "react"
-import { Link } from "react-router-dom"
+import { useHistory } from "react-router"
+import ButtonComponent from "./../components/button"
 
 const ErrorPage = () => {
-
+    const history = useHistory()
     return (
         <Col>
-            <Row justify='center'>К сожалению такой страницы нет, вернитесь на главную и попробуйте ещё раз</Row>
-            <Row>
-                <Link to='/hackaton2/'>на главную</Link>
-            </Row>
+            <h3>
+                <Row justify='center'>К сожалению такой страницы нет, вернитесь</Row>
+                <Row justify='center' style={{margin: "20px 0 10px"}}><ButtonComponent type='primary' btnName='На главную' clickHandler={()=>history.push("/hackaton2/")}/></Row>
+                <Row justify='center'> и попробуйте ещё раз</Row>
+            </h3>
         </Col>
     )
 }
