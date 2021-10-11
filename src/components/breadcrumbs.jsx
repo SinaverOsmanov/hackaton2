@@ -6,8 +6,7 @@ const BreadcrumbsComponent = () => {
     const { pathname } = useLocation()
     if (pathname === "/") return null
     let title = pathname.split("/").filter((e) => e !== "")
-    title = title.filter((e) => e !== "users")
-    title = title.filter((e) => e !== "error")
+    title = title.filter((e) => e !== "users" || e !== "error" || e !== "hackaton2")
     return (
         <Breadcrumb>
             <Breadcrumb.Item>

@@ -18,7 +18,9 @@ export default function FavoritesPage() {
     ))
     return (
         <>
-            <SliderComponent arrayComponents={arrayComponents} />
+            <SliderComponent >
+                {arrayComponents}
+            </SliderComponent>
         </>
     )
 }

@@ -12,7 +12,7 @@ const Routers = () => {
             <Route path="/hackaton2/users/:userId" component={UserPage}/>
             <Route path="/hackaton2/favorites" component={FavoritesPage}/>
             <Route path="/hackaton2/error" component={ErrorPage}>
-                <Redirect to="/hackaton2error"/>
+                <Redirect to="/hackaton2/error"/>
             </Route>
         </Switch>
     )

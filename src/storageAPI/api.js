@@ -24,7 +24,7 @@ export const newUsers = [{
     name: "Евгений Шут",
     age: 27,
     about: "IT Programmer",
-    photo: "https://lh3.googleusercontent.com/c0JjjUmZoxqxSIoRYQ2KtSg-Vzn0hu8JKeBO_fShfU-jaa2_rxDr1VFt0JSwAFgEt5tAXut69eznj90p43NJPNpIa0uDaGuEgTzoo9ruYuvpupHy3UWnIFF10UfpPP6NneRgkdw_3jBCzZ9Dvie63AsEXJeG7ZOesWfeJXv9MbFHY99VFwovxFkng-FiylYLp-CL-0l4aRYCBpsU9q6KOd0rylIMTv1c0EoJuwhgmq5PM5CQCjh8l1KqxWmsQQcz2W93m4gUBll7H39mkO8AZmvp2sYUeyfDkBLiT4Ixh44DOdQLUKvKYqtT_obweFB28kfIwxpSqcw066k9uYaFVAMGWOmLQqnl0lawV16ZpKxiBUtWb9RKXoJ__QlRATbwhHxkIBHB6aPi3VMKDT9bZfqf2SJCAAilI_LYeC4oQGZcNEyfaQfaXKaX42Nd-ARAfOoSSm5ZnZmNPAHbCgPL3VtmrPwz6KXd6kaZg2XY7tzR83HPbxTjYzS5xCICBphIiwK6U1nmR1cWKs_NrlOkRBNmJ3uVDoMcGU0nbZWFu9P8-b_MMkdfMXMTXmNq_gIbRkCQfX8bI4FfRTOpik5VpidojF4yWZMu6IGAPWkvyqTbr2716ddx1GFL4qpZZDgsoMm9ZAg2VtldkM3tSTbrrx8NIXfwgOmGDzB_eRuHGqXL_Ss1rfM49xL0ElVyaqv6eMf4F76yILZvVDJ2HPBZf5Aa=w727-h969-no?authuser=0",
+    photo: "https://sun9-38.userapi.com/impg/c855024/v855024213/1e74d3/wFWpxLUupGg.jpg?size=956x1276&quality=96&sign=3f86e53600266d02e77d7ea203a9185f&type=album",
     social: ["https://github.com/shutnikPk"],
     whatDoing: ["smoking", "cleaning"],
     favorite: false,

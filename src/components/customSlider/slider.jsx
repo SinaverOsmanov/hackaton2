@@ -2,7 +2,7 @@ import React from "react"
 import { SliderPropsType } from "../utils/types"
 import { Carousel } from "antd"
 
-function SliderComponet({ arrayComponents = [1, 2, 3, 4, 5] }) {
+function SliderComponent({ children =[1, 2, 3, 4, 5] }) {
     const contentStyle = {
         height: "160px",
         color: "#fff",
@@ -14,10 +14,10 @@ function SliderComponet({ arrayComponents = [1, 2, 3, 4, 5] }) {
     return (
         <>
             <Carousel autoplay>
-                {arrayComponents.map(component => (<div style={contentStyle} key={component}>{component}</div>))}
+                {children.map(component => (<div style={contentStyle} key={component}>{component}</div>))}
             </Carousel>
         </>
     )
 }
-SliderComponet.propTypes = SliderPropsType
-export default SliderComponet
+SliderComponent.propTypes = SliderPropsType
+export default SliderComponent
